@@ -10,7 +10,25 @@ If you deploy scale content without rigorous staging, velocity gating, and footp
 
 **The Solution:** The `kirby-seo-deployment` skill dictates the exact mechanical rules for safe AI content deployment. From the MVP AI Content Testing Protocol (David Quaid) to IP isolation and publishing velocity caps, this skill forces your AI agent to deploy programmatic content defensively, evading spam classifiers.
 
-## Installation & Usage
-This is a standard AI agent skill (compatible with Antigravity, Cursor, Windsurf).
-1. Copy the `SKILL.md` and `references/` folder into your agent's skills directory.
-2. Trigger the skill by asking your agent to handle "SEO Deployment", "Publishing Velocity", or "MVP Content Testing".
+## 🪄 The Magic Prompt
+
+Copy and paste this directly to your AI (Cursor, Windsurf, Claude Code, Antigravity):
+
+```markdown
+@agent Please install the kirby-seo-deployment skill into this workspace.
+1. Read the `SKILL.md` file and `references/` directory from this repository: https://github.com/markkirby125/kirby-seo-deployment
+2. Identify the correct rules system for our current environment (e.g., `.cursor/rules/` for Cursor, `.windsurfrules` for Windsurf, `.clinerules` for Cline, or `~/.agents/skills/` for Antigravity).
+3. Save the contents appropriately. If our environment supports multi-file dispatcher skills, clone the directory structure exactly.
+4. Confirm when the installation is complete.
+```
+
+## Manual Installation
+
+- **Cursor**: Save `SKILL.md` to `.cursor/rules/kirby-seo-deployment.mdc` and copy `references/`
+- **Windsurf**: Save `SKILL.md` to `.windsurfrules` and copy `references/`
+- **Antigravity**: Clone this repository directly into `~/.agents/skills/kirby-seo-deployment`
+
+## Tech Stack
+
+- **Format**: Markdown / YAML
+- **Compatibility**: Antigravity, Claude Code, Cursor, Windsurf, Cline
