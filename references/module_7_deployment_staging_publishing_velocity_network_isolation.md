@@ -364,3 +364,13 @@ By publishing dozens of MVP pages, you let Google's algorithm dictate where you 
 - [ ] Monitor SERP placements; aggressively expand only the URLs that achieve Page 1 rankings into high-value assets.
 
 ---
+
+### **7.11 The Runaway Publishing Penalty (Agentic Content)**
+
+*Source: The SEO & AI Operations Playbook (2026)*
+
+While AI agents are highly effective at programmatic analysis and drafting, they must never be granted autonomous write-access to publish live to production CMS environments. 
+
+* **Spam Signal Amplification:** Mass autonomous AI publishing invariably creates poor user-interaction signals (high bounce rates, low dwell time, pogo-sticking).
+* **The Algorithmic Trap:** Google’s spam classifiers flag high-velocity, low-engagement publishing spikes. If an agent publishes 500 unvetted articles autonomously, it will invite a sitewide "Scaled Content Abuse" manual action or algorithmic demotion.
+* **Human Judgement Gate:** AI is the researcher and the drafter. The human remains the SEO and the publisher. All agentic content must halt at the staging environment for human editorial approval.

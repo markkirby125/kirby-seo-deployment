@@ -1,8 +1,8 @@
 ---
 name: kirby-seo-deployment
-description: "Use when executing deployment staging, programmatic publishing velocity rules, network footprint isolation, rapid MVP AI content testing, and satellite EMD migrations."
+description: "Use when executing deployment staging, programmatic publishing velocity rules, network footprint isolation, rapid MVP AI content testing, satellite EMD migrations, and runaway publishing guardrails."
 category: technique
-triggers: [seo-deployment, publishing-velocity, programmatic-seo, expired-domains, mvp-testing, satellite-sites, emd]
+triggers: [seo-deployment, publishing-velocity, programmatic-seo, expired-domains, mvp-testing, satellite-sites, emd, runaway-publishing]
 ---
 # Kirby SEO Deployment Operations
 
@@ -18,3 +18,4 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - You need to review publishing cadences or network footprint isolation.
 - You are executing the Minimum Viable Page (MVP) content testing protocol.
 - You are launching third-party satellite sites or EMDs for firewalled experiments.
+- You are establishing deployment guardrails to prevent runaway AI publishing penalties.
