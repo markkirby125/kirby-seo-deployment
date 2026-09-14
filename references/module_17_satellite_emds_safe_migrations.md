@@ -1,6 +1,6 @@
 # Module 17: Satellite EMDs & Safe Migrations
 
-*Source: The Edward Show (fIs1ZSmEJGU)*
+*Source: Mike King (iPullRank) & Edward Sturm / The Edward Show, Episode 1127*
 
 For Generative Engine Optimization, launch third-party Exact Match Domain (EMD) satellite sites. This widens your AI citation footprint and firewalls experiments from your main domain.
 

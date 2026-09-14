@@ -367,7 +367,7 @@ By publishing dozens of MVP pages, you let Google's algorithm dictate where you 
 
 ### **7.11 The Runaway Publishing Penalty (Agentic Content)**
 
-*Source: The SEO & AI Operations Playbook (2026)*
+*Source: Andrew Melnychuk-Oseen & Edward Sturm / The Edward Show, Episode 1114*
 
 While AI agents are highly effective at programmatic analysis and drafting, they must never be granted autonomous write-access to publish live to production CMS environments. 
 
