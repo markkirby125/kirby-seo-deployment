@@ -374,3 +374,16 @@ While AI agents are highly effective at programmatic analysis and drafting, they
 * **Spam Signal Amplification:** Mass autonomous AI publishing invariably creates poor user-interaction signals (high bounce rates, low dwell time, pogo-sticking).
 * **The Algorithmic Trap:** Google’s spam classifiers flag high-velocity, low-engagement publishing spikes. If an agent publishes 500 unvetted articles autonomously, it will invite a sitewide "Scaled Content Abuse" manual action or algorithmic demotion.
 * **Human Judgement Gate:** AI is the researcher and the drafter. The human remains the SEO and the publisher. All agentic content must halt at the staging environment for human editorial approval.
+
+---
+
+### **7.12 The 301 Collapse & Redirect Protocol for Experimental Page Splits**
+
+*Source: Edward Sturm × James Dooley (Ep. 1,171). September 2026.*
+
+* **Execution Seam with `kirby-aiseo-skill` §2.37:** When deploying an experimental 50/50 tiebreak page split (§2.37B) to test divergent intent, monitor for cannibalization signals (rank instability between child and parent, impression dilution).
+* **The 301 Rollback Procedure:**
+  1. Immediately consolidate the child content back into the parent URL as an `<h2>` section.
+  2. Implement an immediate 301 Permanent Redirect from `child-slug` directly to `parent-slug`.
+  3. Repoint all internal navigation and in-content links to the parent URL directly; zero tolerance for internal redirect chains.
+* **Interaction with Publishing Velocity (§7.2 Natural Publishing Velocity):** Ensure bulk rollbacks or batch redirects do not trip quarantine velocity filters; stage redirects cleanly in the same deployment window.
