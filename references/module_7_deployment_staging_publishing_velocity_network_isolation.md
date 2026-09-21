@@ -401,11 +401,11 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
    - Before drafting or deploying child landing pages, list the target commercial keywords and service offerings as clean text on the parent category or `/uses` hub page.
    - Do not add placeholder URLs or broken anchor tags. Keep them as plain descriptive text or semantic list items.
 2. **Stage 2: Algorithmic Pre-Ranking Window**:
-   - Allow Google to recrawl the hub page. Because the domain already possesses baseline topical authority, Google's indexer routinely begins associating the target queries with the domain, often ranking the hub page in striking distance (positions 5–30) for terms it does not yet fully satisfy.
+   - Allow Google to recrawl the hub page. With established domain authority, Google's indexer associates the terms with the domain, often ranking the hub page for target queries ahead of dedicated child content creation.
 3. **Stage 3: Child Page Deployment & Link Conversion**:
    - Draft the dedicated child page adhering to the §7.11 human-judgment gate and the 3 manual intent pre-flight questions (`../../kirby-aiseo-skill/SKILL.md` §2.31D).
    - Once published, immediately convert the plain-text keyword mention on the hub page into an active contextual internal link pointing down to the child URL.
-   - **The Authority Transfer**: This instantly funnels the pre-earned topical relevance from the ranking hub page into the fresh child asset, dramatically shortening the time-to-rank while respecting natural publishing velocity (§7.2).
+   - **The Authority Transfer**: This routes the pre-accumulated topical relevance from the ranking hub page into the child asset upon launch, establishing internal linking equity without triggering bulk deployment velocity alerts (§7.2).
 
 #### B. Deployment Guardrails
 - **Anti-City-Swap Law**: Hub pre-staging is strictly for genuine product/service capability expansions. It must **never** be used to pre-stage programmatic city-swapped local pages (violates `../../kirby-aiseo-skill/SKILL.md` §2.8 anti-template rules).
