@@ -13,3 +13,4 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - You are executing the Minimum Viable Page (MVP) content testing protocol.
 - You are launching third-party satellite sites or EMDs for firewalled experiments.
 - You are establishing deployment guardrails to prevent runaway AI publishing penalties.
+- You are staging hub-page keywords to accumulate pre-ranking relevance before launching child conversion pages (Module 7 §7.13).

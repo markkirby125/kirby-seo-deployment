@@ -387,3 +387,34 @@ While AI agents are highly effective at programmatic analysis and drafting, they
   2. Implement an immediate 301 Permanent Redirect from `child-slug` directly to `parent-slug`.
   3. Repoint all internal navigation and in-content links to the parent URL directly; zero tolerance for internal redirect chains.
 * **Interaction with Publishing Velocity (§7.2 Natural Publishing Velocity):** Ensure bulk rollbacks or batch redirects do not trip quarantine velocity filters; stage redirects cleanly in the same deployment window.
+
+---
+
+### **7.13 The Hub-Page Keyword Pre-Staging Sequence (Edward Sturm Ep. 1173)**
+
+*Source: Edward Sturm podcast Episode 1,173. September 2026. (Execution seam with `kirby-aiseo-skill` Module 10 §10.11G)*
+
+Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries high indexation and ranking friction. To accelerate indexation and pre-seed topical relevance without triggering bulk deployment velocity alerts (§7.2), execute this staged deployment sequence:
+
+#### A. Staged Deployment Lifecycle
+1. **Stage 1: Hub-Page Lexical Pre-Seeding**:
+   - Before drafting or deploying child landing pages, list the target commercial keywords and service offerings as clean text on the parent category or `/uses` hub page.
+   - Do not add placeholder URLs or broken anchor tags. Keep them as plain descriptive text or semantic list items.
+2. **Stage 2: Algorithmic Pre-Ranking Window**:
+   - Allow Google to recrawl the hub page. Because the domain already possesses baseline topical authority, Google's indexer routinely begins associating the target queries with the domain, often ranking the hub page in striking distance (positions 5–30) for terms it does not yet fully satisfy.
+3. **Stage 3: Child Page Deployment & Link Conversion**:
+   - Draft the dedicated child page adhering to the §7.11 human-judgment gate and the 3 manual intent pre-flight questions (`../../kirby-aiseo-skill/SKILL.md` §2.31D).
+   - Once published, immediately convert the plain-text keyword mention on the hub page into an active contextual internal link pointing down to the child URL.
+   - **The Authority Transfer**: This instantly funnels the pre-earned topical relevance from the ranking hub page into the fresh child asset, dramatically shortening the time-to-rank while respecting natural publishing velocity (§7.2).
+
+#### B. Deployment Guardrails
+- **Anti-City-Swap Law**: Hub pre-staging is strictly for genuine product/service capability expansions. It must **never** be used to pre-stage programmatic city-swapped local pages (violates `../../kirby-aiseo-skill/SKILL.md` §2.8 anti-template rules).
+- **BOFU Link Protection**: When the child page goes live, enforce near-zero internal links on the child page itself (`../../kirby-aiseo-skill/SKILL.md` §10.11F). The hub links down to the child, but the child directs visitor attention solely to the primary conversion CTA.
+
+**Hub-Page Pre-Staging Checklist**
+- [ ] Add target keyword offerings as plain text to the category or `/uses` hub page prior to child page creation.
+- [ ] Observe GSC queries or run the `site:domain "keyword"` check (`../../kirby-aiseo-skill/SKILL.md` §10.11A) to detect hub pre-ranking.
+- [ ] Complete the 3 handwritten intent questions before child page drafting (§2.31D).
+- [ ] Deploy the child page adhering to §7.11 human review gate.
+- [ ] Convert the hub plain-text mention into a contextual link pointing to the child page.
+- [ ] Enforce near-zero internal link leakage on the child conversion page.
