@@ -258,6 +258,7 @@ Third-party metrics (DA/DR) from a single vendor are easily faked through automa
 #### D. Brand-Fused Exact Match Domains (BF-EMDs) in 2026
 While pure legacy EMDs (e.g., `bestonlinecasino.com`) trigger brand-spam scrutiny, modern high-performance architecture utilizes **Brand-Fused EMDs**:
 * **The BF-EMD Structure:** Combine the proprietary brand name with the primary transactional entity (e.g., `[Brand]Plastering.com` or `[Brand]OnlineCasino.com`). This secures the early query CTR and semantic relevance of an EMD while building defensible, long-term brand equity.
+* **Subfolder Modifier Inheritance:** Because the EMD contains the root keyword (e.g., "plastering"), deploying subfolders for modifiers inherits that root keyword. For example, `/commercial` on `[Brand]Plastering.com` ranks effectively for "commercial plastering" because the domain string acts as a semantic modifier. Subdomains do not inherit this value; always use subfolders for modifier targeting.
 * **LLM Retrieval Advantage:** In generative AI search engines (ChatGPT Search, Perplexity), Brand-Fused EMDs with structured schema are frequently **retrieved and cited even with near-zero Domain Rating (DR)**, because the domain string itself functions as an unambiguous semantic entity anchor in vector embedding space.
 
 **URL Preservation & Domain Acquisition Checklist**
