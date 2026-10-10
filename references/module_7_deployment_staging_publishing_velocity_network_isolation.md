@@ -80,7 +80,7 @@ Unlike manual actions that require formal reconsideration requests in Google Sea
 
 * **1. Root-Cause Elimination & The 410 Purge Mandate:**
   * Identify and aggressively remediate every violating content batch: remove thin scraped feeds, prune low-yield programmatic pages, purge trailing AI text blobs, and eliminate aggressive or misleading redirect chains.
-  * For low-quality programmatic batches that cannot be immediately rewritten to high-utility standards, serve an explicit **HTTP 410 (Gone)** header to instruct Googlebot to purge the URLs from the crawl graph rapidly. **Empirical benchmark (9,249 case-study meta-analysis, Edward Sturm Ep. 1191):** serving a 404 instead of a 410 on deleted pages left **49.6% of pages still indexed**; HTTP 410 drops dead URLs from the index nearly **twice as fast**. Routing caveat: 410 is for URLs with **no retained equivalent** — exactly the population the §7.9 eviction protocol and this section's low-yield purge mandate target; if the content still has an intent-parity home, map a 1:1 301 instead (URL Preservation Law). 410 is otherwise a strong, slow-to-reverse signal — wrongly-retired URLs lose equity with slow recovery.
+  * For low-quality programmatic batches that cannot be immediately rewritten to high-utility standards, serve an explicit **HTTP 410 (Gone)** header to instruct Googlebot to purge the URLs from the crawl graph rapidly. **Empirical benchmark (9,249 case-study meta-analysis, Edward Sturm Ep. 1191):** serving a 404 instead of a 410 on deleted pages left **49.6% of pages still indexed**; HTTP 410 drops dead URLs from the index nearly **twice as fast**. Routing caveat: 410 is for URLs with **no retained equivalent** — exactly the population the §7.12 eviction protocol and this section's low-yield purge mandate target; if the content still has an intent-parity home, map a 1:1 301 instead (URL Preservation Law). 410 is otherwise a strong, slow-to-reverse signal — wrongly-retired URLs lose equity with slow recovery.
 * **2. The 75–90 Day (2.5–3 Month) Observation Window:**
   * Remediating content does *not* produce immediate ranking recovery upon next crawl. Google's spam classifiers require an extended observation window (typically 75 to 90 days) where the domain consistently demonstrates its new, unpolluted state to Googlebot.
   * Attempting to publish new programmatic batches or velocity surges during this observation window resets the observation clock.
@@ -89,9 +89,9 @@ Unlike manual actions that require formal reconsideration requests in Google Sea
 * **4. Sustained High-Yield Signal Rebuilding:**
   * During the observation cycle, publish only high-utility, verified first-party assets (§2.26) and earn legitimate brand citations (§4.3.1) to continuously replenish positive behavioral telemetry and domain trust scores.
 
-##
+---
 
-### **7.1 Organic Traffic Decline Forensic Triage & Subfolder Diagnostic Architecture**
+### **7.8 Organic Traffic Decline Forensic Triage & Subfolder Diagnostic Architecture**
 
 *Source: David Quinn & Edward Sturm podcast Episode 1,147. September 2026.*
 
@@ -149,7 +149,7 @@ When diagnosing a traffic drop in Google Search Console, filter performance by s
 
 ---
 
-### **7.3 Hyper-Scale SEO Governance: The F1 "Pit Stop" Law, Natural Mixed Backlinks & The 16,000-Variation Intent Taxonomy (Binance 100M+ URL Architecture)**
+### **7.9 Hyper-Scale SEO Governance: The F1 "Pit Stop" Law, Natural Mixed Backlinks & The 16,000-Variation Intent Taxonomy (Binance 100M+ URL Architecture)**
 
 *Source: Dinesh Sivapragsam (Head of Organic Growth & SEO at Binance, "How Binance Took 50% of Crypto Search With SEO"). September 2026.*
 
@@ -216,7 +216,7 @@ On-page architecture must conform to cultural communication styles to satisfy Na
 
 ---
 
-### **7.4 The Money Page URL Preservation Law, 1-to-1 Topical 301 Mapping & Expired Domain Due Diligence (Dirk Schembri)**
+### **7.10 The Money Page URL Preservation Law, 1-to-1 Topical 301 Mapping & Expired Domain Due Diligence (Dirk Schembri)**
 
 *Source: Dirk Schembri (Glorify Labs / Odys Podcast, "Black Hat SEO Still Works in 2026: Exact Match Domains & Drop Catching"). September 2026.*
 
@@ -271,7 +271,7 @@ While pure legacy EMDs (e.g., `bestonlinecasino.com`) trigger brand-spam scrutin
 
 ---
 
-### **7.8 The Persistent "Business Brief" LLM Project Anchor (Context Drift Defense)**
+### **7.11 The Persistent "Business Brief" LLM Project Anchor (Context Drift Defense)**
 
 *Source: Nico (AI Ranking Complete AI SEO Course 2026).*
 
@@ -310,7 +310,7 @@ Never generate multi-page client content in ephemeral, one-off chat threads. Enf
 
 ---
 
-### **7.9 Decaying Content Eviction: The Static HTML EMD & Parasite Migration Protocol**
+### **7.12 Decaying Content Eviction: The Static HTML EMD & Parasite Migration Protocol**
 
 *Source: James Dooley & David Quaid (Edward Sturm Podcast Episode 1,142).*
 
@@ -340,7 +340,7 @@ Decoupling content across standalone EMDs and parasite platforms eliminates sing
 
 ---
 
-### **7.10 The MVP AI Content Testing Protocol (Growth Hacking Content)**
+### **7.13 The MVP AI Content Testing Protocol (Growth Hacking Content)**
 
 *Source: David Quaid & Edward Sturm podcast Episode 913. September 2026.*
 
@@ -366,7 +366,7 @@ By publishing dozens of MVP pages, you let Google's algorithm dictate where you 
 
 ---
 
-### **7.11 The Runaway Publishing Penalty (Agentic Content)**
+### **7.14 The Runaway Publishing Penalty (Agentic Content)**
 
 *Source: Andrew Melnychuk-Oseen & Edward Sturm / The Edward Show, Episode 1114*
 
@@ -378,7 +378,7 @@ While AI agents are highly effective at programmatic analysis and drafting, they
 
 ---
 
-### **7.12 The 301 Collapse & Redirect Protocol for Experimental Page Splits**
+### **7.15 The 301 Collapse & Redirect Protocol for Experimental Page Splits**
 
 *Source: Edward Sturm × James Dooley (Ep. 1,171). September 2026.*
 
@@ -391,7 +391,7 @@ While AI agents are highly effective at programmatic analysis and drafting, they
 
 ---
 
-### **7.13 The Hub-Page Keyword Pre-Staging Sequence (Edward Sturm Ep. 1173)**
+### **7.16 The Hub-Page Keyword Pre-Staging Sequence (Edward Sturm Ep. 1173)**
 
 *Source: Edward Sturm podcast Episode 1,173. September 2026. (Execution seam with `kirby-aiseo-skill` Module 10 §10.11G)*
 
@@ -404,7 +404,7 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
 2. **Stage 2: Algorithmic Pre-Ranking Window**:
    - Allow Google to recrawl the hub page. With established domain authority, Google's indexer associates the terms with the domain, often ranking the hub page for target queries ahead of dedicated child content creation.
 3. **Stage 3: Child Page Deployment & Link Conversion**:
-   - Draft the dedicated child page adhering to the §7.11 human-judgment gate and the 3 manual intent pre-flight questions (`../../kirby-aiseo-skill/SKILL.md` §2.31D).
+   - Draft the dedicated child page adhering to the §7.14 human-judgment gate and the 3 manual intent pre-flight questions (`../../kirby-aiseo-skill/SKILL.md` §2.31D).
    - Once published, immediately convert the plain-text keyword mention on the hub page into an active contextual internal link pointing down to the child URL.
    - **The Authority Transfer**: This routes the pre-accumulated topical relevance from the ranking hub page into the child asset upon launch, establishing internal linking equity without triggering bulk deployment velocity alerts (§7.2).
 
@@ -416,13 +416,13 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
 - [ ] Add target keyword offerings as plain text to the category or `/uses` hub page prior to child page creation.
 - [ ] Observe GSC queries or run the `site:domain "keyword"` check (`../../kirby-aiseo-skill/SKILL.md` §10.11A) to detect hub pre-ranking.
 - [ ] Complete the 3 handwritten intent questions before child page drafting (§2.31D).
-- [ ] Deploy the child page adhering to §7.11 human review gate.
+- [ ] Deploy the child page adhering to §7.14 human review gate.
 - [ ] Convert the hub plain-text mention into a contextual link pointing to the child page.
 - [ ] Enforce near-zero internal link leakage on the child conversion page.
 
 ---
 
-### **7.14 Multilingual Mirror Synchronization Audits (Parametric Poisoning Guard)**
+### **7.17 Multilingual Mirror Synchronization Audits (Parametric Poisoning Guard)**
 
 *Source: James Dooley / Stephen Burns, LLM Mastery — Common Crawl & Harmonic Centrality (2026). Extends the localization architecture (Translation Memory, human-source templates) earlier in this module.*
 
