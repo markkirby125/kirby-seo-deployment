@@ -64,7 +64,7 @@ Every page must be designed to pass both algorithmic mathematical audits and man
 * **Expired Domain Abuse Defense:** Google actively penalizes the acquisition of expired or competitor domains used to pass authority to unrelated commercial pages.
 * **Mandatory 1-to-1 Intent Parity:** If migrating or 301-redirecting acquired competitor URLs:
   * Redirect *only* to target pages that share $\ge 90\%$ semantic search intent and entity topic.
-  * Never bulk-redirect acquired URLs to a generic homepage or mismatched product landing page while returning passive 404s for the remainder — URLs with no intent-parity target get an explicit HTTP 410 per §7.7 (passive 404s left 49.6% of such pages indexed; benchmark in §7.7).
+  * Never bulk-redirect acquired URLs to a generic homepage or mismatched product landing page while returning passive 404s for the remainder — URLs with no intent-parity target get an explicit HTTP 410 (benchmark in §7.7: passive 404s left 49.6% of such pages indexed).
   * Preserve legacy URL content architectures in staging prior to redirect execution to prevent pogo-sticking and NavBoost demotions.
 
 ### **7.6 Pre-Spam-Update Volatility Freeze Protocol**
@@ -436,4 +436,4 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
      * **Genuinely dead, no equivalent** → retire deliberately with HTTP 410 per §7.7 — never silent abandonment (an orphaned live mirror is the worst state).
      * **Still strategically needed** → synchronize via the Translation Memory pipeline.
   3. **Mass-change gating:** whole-locale retirement or consolidation is a mass URL change — confirm no §7.6 volatility-freeze conflict and stage the changeover per §7.2 natural velocity, never a single-day flip.
-* **Caution:** translation false positives create editorial overhead — audit against the strings repository rather than ad-hoc diffing.
+* **Caution:** the audit itself carries infra cost (crawler/tooling per locale) — scope it to the mirror inventory, not the full site; translation false positives create editorial overhead — audit against the strings repository rather than ad-hoc diffing.
