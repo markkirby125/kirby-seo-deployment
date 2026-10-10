@@ -20,3 +20,9 @@ For Generative Engine Optimization, launch third-party Exact Match Domain (EMD) 
 * Maintain a strict 1:1 redirect map, preserving the exact URL path structure to ensure semantic relevance transfers seamlessly.
 * **Persistent source-domain holding:** After the 1:1 map is live, keep the source EMD registered, hosted, and serving those 301s. Do not drop the registration, expire DNS, or collapse the source to a parked page.
 * *Note: Refer to `kirby-seo-deployment` Module 7 for detailed URL Preservation and 301 execution rules.*
+
+### **17.4 PARKED — Satellite Hub Directory Architecture (Do Not Implement)**
+
+* **Status:** Parked at its provenance gate (October 2026). The proposed doctrine — topic-focused satellite *directory* sites with continuously refreshed publish dates to secure high-frequency ChatGPT/Bing citations — has **no verifiable primary source** (adjacent concepts exist: the third-party EMD firewall above (§17.1), generic freshness tactics; the specific claim does not).
+* **Sanctioned alternative:** the third-party EMD satellite architecture above (§17.1 EMD Firewall, §17.2 10-page rule, Module 7 network isolation) is the vetted satellite doctrine.
+* **If ever revived:** the originator must first produce a primary source; any implementation must then ship with disclosure/nofollow requirements and hard footprint limits — the pattern is PBN-adjacent and carries Google link-spam detection risk either way.

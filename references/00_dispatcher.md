@@ -15,4 +15,7 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - You are launching third-party satellite sites or EMDs for firewalled experiments.
 - You are establishing deployment guardrails to prevent runaway AI publishing penalties.
 - You are staging hub-page keywords to accumulate pre-ranking relevance before launching child conversion pages (Module 7 §7.13).
+- You are deciding between HTTP 410 and 404 for retired URLs (§7.7 — 410 drops dead URLs ~2x faster; passive 404s left 49.6% indexed per the §7.7 benchmark).
+- You are auditing multilingual/English mirrors for parametric-poisoning staleness (§7.14 — already-ingested poisoning may be permanent; synchronize, consolidate, or deliberately retire).
+- You are evaluating "satellite hub directory" plays (Module 17 §17.4 — PARKED, no verifiable source; the Module 17 third-party EMD firewall is the sanctioned satellite doctrine).
 - You are deploying defensive video assets to mitigate negative branded AI Overviews (Module 18).

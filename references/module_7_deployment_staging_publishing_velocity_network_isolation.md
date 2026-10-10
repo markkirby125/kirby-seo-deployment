@@ -64,7 +64,7 @@ Every page must be designed to pass both algorithmic mathematical audits and man
 * **Expired Domain Abuse Defense:** Google actively penalizes the acquisition of expired or competitor domains used to pass authority to unrelated commercial pages.
 * **Mandatory 1-to-1 Intent Parity:** If migrating or 301-redirecting acquired competitor URLs:
   * Redirect *only* to target pages that share $\ge 90\%$ semantic search intent and entity topic.
-  * Never bulk-redirect acquired URLs to a generic homepage or mismatched product landing page while returning 404s for the remainder.
+  * Never bulk-redirect acquired URLs to a generic homepage or mismatched product landing page while returning passive 404s for the remainder — URLs with no intent-parity target get an explicit HTTP 410 per §7.7 (passive 404s left 49.6% of such pages indexed; benchmark in §7.7).
   * Preserve legacy URL content architectures in staging prior to redirect execution to prevent pogo-sticking and NavBoost demotions.
 
 ### **7.6 Pre-Spam-Update Volatility Freeze Protocol**
@@ -80,7 +80,7 @@ Unlike manual actions that require formal reconsideration requests in Google Sea
 
 * **1. Root-Cause Elimination & The 410 Purge Mandate:**
   * Identify and aggressively remediate every violating content batch: remove thin scraped feeds, prune low-yield programmatic pages, purge trailing AI text blobs, and eliminate aggressive or misleading redirect chains.
-  * For low-quality programmatic batches that cannot be immediately rewritten to high-utility standards, serve an explicit **HTTP 410 (Gone)** header to instruct Googlebot to purge the URLs from the crawl graph rapidly.
+  * For low-quality programmatic batches that cannot be immediately rewritten to high-utility standards, serve an explicit **HTTP 410 (Gone)** header to instruct Googlebot to purge the URLs from the crawl graph rapidly. **Empirical benchmark (9,249 case-study meta-analysis, Edward Sturm Ep. 1191):** serving a 404 instead of a 410 on deleted pages left **49.6% of pages still indexed**; HTTP 410 drops dead URLs from the index nearly **twice as fast**. Routing caveat: 410 is for URLs with **no retained equivalent** — exactly the population the §7.9 eviction protocol and this section's low-yield purge mandate target; if the content still has an intent-parity home, map a 1:1 301 instead (URL Preservation Law). 410 is otherwise a strong, slow-to-reverse signal — wrongly-retired URLs lose equity with slow recovery.
 * **2. The 75–90 Day (2.5–3 Month) Observation Window:**
   * Remediating content does *not* produce immediate ranking recovery upon next crawl. Google's spam classifiers require an extended observation window (typically 75 to 90 days) where the domain consistently demonstrates its new, unpolluted state to Googlebot.
   * Attempting to publish new programmatic batches or velocity surges during this observation window resets the observation clock.
@@ -419,3 +419,21 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
 - [ ] Deploy the child page adhering to §7.11 human review gate.
 - [ ] Convert the hub plain-text mention into a contextual link pointing to the child page.
 - [ ] Enforce near-zero internal link leakage on the child conversion page.
+
+---
+
+### **7.14 Multilingual Mirror Synchronization Audits (Parametric Poisoning Guard)**
+
+*Source: James Dooley / Stephen Burns, LLM Mastery — Common Crawl & Harmonic Centrality (2026). Extends the localization architecture (Translation Memory, human-source templates) earlier in this module.*
+
+* **Definitions:** A *mirror* is any alternate-locale edition of the primary site — subfolder (`/en/`), subdomain (`en.example.com`), or ccTLD (`example.co.uk`) — regardless of hosting model.
+* **The Threat:** Common Crawl ingests 160+ languages, and foundation models train predominantly on English corpora. An abandoned or stale **English mirror** of a multilingual site can be ingested and permanently poison LLM parametric answers about the business — the documented case (an outdated English translation of a Flemish site) never corrected.
+* **Timing Reality:** the 6–8 month figure from the source above is the estimated *injection/training latency* for new synthetic terms, **not** a flush time for already-ingested poisoning — already-ingested poisoning may be **permanent**. **Retiring the mirror stops further ingestion but retracts nothing already ingested**; there is no known retraction mechanism for parametric memory. Prevention is the only reliable control.
+* **Audit Protocol:**
+  1. Inventory every mirror; check staleness at each quarterly audit **and** at every primary release train. A locale whose content lags the primary by more than one release is a poisoning candidate.
+  2. For each stale mirror, route by equivalence:
+     * **Has intent-parity targets** → consolidate via the 1:1 Topical Parity mapping doctrine ("The Money Page URL Preservation Law" section) — strict 1:1 301s, never bulk-to-homepage.
+     * **Genuinely dead, no equivalent** → retire deliberately with HTTP 410 per §7.7 — never silent abandonment (an orphaned live mirror is the worst state).
+     * **Still strategically needed** → synchronize via the Translation Memory pipeline.
+  3. **Mass-change gating:** whole-locale retirement or consolidation is a mass URL change — confirm no §7.6 volatility-freeze conflict and stage the changeover per §7.2 natural velocity, never a single-day flip.
+* **Caution:** translation false positives create editorial overhead — audit against the strings repository rather than ad-hoc diffing.
