@@ -10,6 +10,8 @@ If you deploy scale content without rigorous staging, velocity gating, and footp
 
 **The Solution:** The `kirby-seo-deployment` skill dictates the exact mechanical rules for safe AI content deployment. From the MVP AI Content Testing Protocol (David Quaid) to IP isolation and publishing velocity caps, this skill forces your AI agent to deploy programmatic content defensively, evading spam classifiers.
 
+**October 2026 update:** §7.7 gains the 410-vs-404 empirical benchmark (passive 404s left 49.6% of deleted pages indexed; 410 purges ~2x faster, with no-equivalent routing); §7.14 adds multilingual mirror synchronization audits guarding against permanent LLM parametric poisoning; §17.4 formally PARKS the "satellite hub directory" tactic (no verifiable primary source — the third-party EMD firewall remains the sanctioned satellite doctrine).
+
 ## 🪄 The Magic Prompt
 
 Copy and paste this directly to your AI (Cursor, Windsurf, Claude Code, Antigravity):
