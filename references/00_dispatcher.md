@@ -7,9 +7,11 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - **Module 11: David Quaid MVP Protocol (Tactical Addendum)** -> Read `./module_11_david_quaid_september_2026_tactical_addendum_edward_sturm_ep_92.md`
 - **Module 17: Satellite EMDs & Safe Migrations** -> Read `./module_17_satellite_emds_safe_migrations.md`
 - **Module 18: Defensive Video Deployment for AI ORM (Ann Smarty Ep. 1186)** -> Read `./module_18_defensive_video_deployment_ai_orm_ann_smarty_ep_1186.md`
+- **Module 19: Location Rollout Swap-Test Pre-Deployment Gate (Sept 24, 2026 Spam Update)** -> Read `./module_19_location_rollout_swap_test_gate.md`
 
 ## When to Use
 - You are deploying programmatic SEO rollouts or acquiring expired domains.
+- You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7).
 - You need to review publishing cadences or network footprint isolation.
 - You are executing the Minimum Viable Page (MVP) content testing protocol.
 - You are launching third-party satellite sites or EMDs for firewalled experiments.
