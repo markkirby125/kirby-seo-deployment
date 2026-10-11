@@ -1,8 +1,8 @@
 ---
 name: kirby-seo-deployment
-description: "Use when executing deployment staging, programmatic publishing velocity rules, network footprint isolation, rapid MVP AI content testing, satellite EMD migrations, and runaway publishing guardrails."
+description: "Use when executing deployment staging, programmatic publishing velocity rules, network footprint isolation, rapid MVP AI content testing, satellite EMD migrations, runaway publishing guardrails, or migration cutover scheduling against Google's empirical timing benchmarks."
 category: technique
-triggers: [seo-deployment, publishing-velocity, programmatic-seo, expired-domains, mvp-testing, satellite-sites, emd, runaway-publishing]
+triggers: [seo-deployment, publishing-velocity, programmatic-seo, expired-domains, mvp-testing, satellite-sites, emd, runaway-publishing, migration-timing, title-refresh-sla]
 risk: unverified
 author: paul-kirby
 tags: [kirby, ai-agent, workflow]

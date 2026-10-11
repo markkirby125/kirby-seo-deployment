@@ -8,6 +8,7 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - **Module 17: Satellite EMDs & Safe Migrations** -> Read `./module_17_satellite_emds_safe_migrations.md`
 - **Module 18: Defensive Video Deployment for AI ORM (Ann Smarty Ep. 1186)** -> Read `./module_18_defensive_video_deployment_ai_orm_ann_smarty_ep_1186.md`
 - **Module 19: Location Rollout Swap-Test Pre-Deployment Gate (Sept 24, 2026 Spam Update)** -> Read `./module_19_location_rollout_swap_test_gate.md`
+- **Module 20: Migration Timing Benchmarks & Title-Update SLA Rules (Google Illyes Oct 2026)** -> Read `./module_20_migration_timing_benchmarks_title_sla.md`
 
 ## When to Use
 - You are deploying programmatic SEO rollouts or acquiring expired domains.
@@ -21,3 +22,5 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 - You are auditing multilingual/English mirrors for parametric-poisoning staleness (§7.17 — already-ingested poisoning may be permanent; synchronize, consolidate, or deliberately retire).
 - You are evaluating "satellite hub directory" plays (Module 17 §17.4 — PARKED, no verifiable source; the Module 17 third-party EMD firewall is the sanctioned satellite doctrine).
 - You are deploying defensive video assets to mitigate negative branded AI Overviews (Module 18).
+- You are staging a site migration or EMD/satellite cutover against Google's empirical consolidation windows — 1–3 months typical, 6 months-to-1+-year slow case, canonical convergence 1–3 weeks — with the pre-cutover signal purge, single-event flip, sitemap discipline, 90-day freeze, and month-6 escalation gate (Module 20; benchmark table and forecast math are `../../kirby-seo-timing-benchmarks/SKILL.md`).
+- You are setting post-deploy expectations for title/meta/snippet edits — 1–2 day SERP refresh typical *after* the ~30-day recrawl gate, so verification windows run 4–6 weeks, not next-day (Module 20 §20.3).
