@@ -4,7 +4,7 @@ description: "Use when executing deployment staging, programmatic publishing vel
 category: technique
 triggers: [seo-deployment, publishing-velocity, programmatic-seo, expired-domains, mvp-testing, satellite-sites, emd, runaway-publishing]
 risk: unverified
-author: william-fitzpatrick
+author: paul-kirby
 tags: [kirby, ai-agent, workflow]
 ---
 
