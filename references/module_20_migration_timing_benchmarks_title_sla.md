@@ -33,13 +33,30 @@ Benchmark anchors: title/snippet SERP changes land in **1–2 days typical** —
 3. **Hot-path exemption:** pages linked from frequently crawled surfaces (homepage, hub donors) refresh faster than the ~30d default. If a business-critical snippet must land quickly, apply the sanctioned compression levers (internal-link re-pointing, GSC URL Inspection within quota) defined in `../../kirby-seo-timing-benchmarks/SKILL.md` Reference 05 — never bulk resubmission.
 4. **Slow-tail classification:** a title change not reflected after ~60 days past deploy, with healthy crawl capacity, is a crawl-deprioritization or quality signal — route to the triage protocol (`../../kirby-seo-timing-benchmarks/SKILL.md` Reference 03 §3.4), not to more deploys.
 
-## 20.4 Deployment Checklist Addendum (staple to any migration release)
+## 20.4 GBP Domain Cutover & 14-Day Staggered Rebrand Cadence
+
+*Source: Whitespark ("What Google Won't Tell You About Rebranding Your Business Profile" — Darren Shaw) & Caleb Ulku ("Google Business Address Change DENIED?"). Full GBP rebranding & verification rules live in `../../kirby-local-seo/SKILL.md` Module 9 & Module 12 — this section governs the deployment cutover timing gate.*
+
+When a domain migration or rebrand involves an attached **Google Business Profile (GBP)**, flipping the GBP website URL or business name on launch day triggers Google's automated anti-hijacking suspension filter because Googlebot has not yet indexed the new web footprint.
+
+**Deployment cutover sequence:**
+1. **T-0 (Website & Tier-1 Cutover):** Deploy the new domain/301 map with updated visible NAP and `LocalBusiness` JSON-LD schema (`name`, `url`, `telephone`, `address`), and synchronize Tier-1 external anchors (Facebook Business Page, Yelp, BBB/Yell, Data Axle, Localeze). **Do NOT touch the GBP dashboard at T-0.**
+2. **T+0 to T+14 Days (The Mandatory 14-Day Indexing Buffer):** Enforce a strict 14-day waiting gate after T-0 so Googlebot crawls and indexes the updated website schema and third-party directory citations before GBP verification bots run their cross-check.
+3. **T+14 Days (Staggered GBP Field Cutover — 1 Field Per Week):** Logged in strictly as the GBP **Primary Owner** (never Manager), apply changes at 7-day intervals:
+   - *Day 14*: Update GBP **Website URL** to the new canonical domain.
+   - *Day 21*: Update GBP **Business Name** (if rebranding).
+   - *Day 28*: Update **Primary Category** or **Phone Number** (if applicable).
+4. **Address Cutover Pre-Check:** Never combine an address change with a domain/name flip. Before any address cutover, audit the target coordinate on Google Maps for prior-tenant ghost listings (`../../kirby-local-seo/SKILL.md` Module 12 §12.2).
+
+## 20.5 Deployment Checklist Addendum (staple to any migration release)
 
 ```text
 [ ] Pre-cutover: internal links audited (zero references to deprecated URLs)
 [ ] Pre-cutover: sitemap inventory canonical-only; lastmod truthful
 [ ] Pre-cutover: 301 map 1:1, no chains; 410 chosen for dead URLs where applicable (§7.7)
-[ ] Cutover: single-event flip; sitemaps regenerated + submitted in same deploy
+[ ] Cutover (T-0): single-event flip; sitemaps regenerated + submitted; JSON-LD schema updated
+[ ] GBP Gate (T+14d): 14-day indexing buffer elapsed before touching GBP dashboard
+[ ] GBP Stagger (T+14d/21d/28d): 1 sensitive field per week via Primary Owner account
 [ ] Post: consolidation window declared (90-day freeze; checkpoints 30/60/90)
 [ ] Post: canonical convergence monitored (expect 1–3 weeks; alarm at 8)
 [ ] Post: title/snippet verification deferred to 30+ day telemetry window
