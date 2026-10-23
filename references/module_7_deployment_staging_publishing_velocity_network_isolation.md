@@ -437,3 +437,51 @@ Deploying bottom-of-funnel (BOFU) service or product landing pages cold carries 
      * **Still strategically needed** → synchronize via the Translation Memory pipeline.
   3. **Mass-change gating:** whole-locale retirement or consolidation is a mass URL change — confirm no §7.6 volatility-freeze conflict and stage the changeover per §7.2 natural velocity, never a single-day flip.
 * **Caution:** the audit itself carries infra cost (crawler/tooling per locale) — scope it to the mirror inventory, not the full site; translation false positives create editorial overhead — audit against the strings repository rather than ad-hoc diffing.
+
+---
+
+### **7.18 Evergreen Seasonal Directory Architecture & January Canonical Handoff (Ep. 1206)**
+
+*Source: The Edward Show, Episode 1,206 (David Quaid, Gagan Ghotra & Edward Sturm)*
+
+* **The Year-in-Slug Anti-Pattern:** Never inject calendar years into promotional URL slugs (e.g., `/black-friday-2026/`). Rotating seasonal slugs resets Google’s historical indexation scores, forfeits accrued backlinks, and forces the domain to rebuild ranking equity from scratch each cycle.
+* **The Evergreen Neighborhood Directory:**
+  ```
+  example.com/black-friday/                     <-- Evergreen Root Hub (Canonical)
+  example.com/black-friday/[category]-deals     <-- Child Category Landers
+  example.com/black-friday/[niche]-deals        <-- Long-Tail Compact Landers
+  ```
+  * Keep the root `/black-friday/` URL live year-round with a self-referencing canonical tag.
+  * Update the `<title>`, `<h1>`, meta description, and on-page copy to reflect the current shopping season.
+* **The January Canonical Archival Protocol:**
+  1. Once holiday shopping concludes, snapshot the completed promotional hub to a static archive URL: `example.com/black-friday-2026/`.
+  2. Set a **self-referential canonical tag** on `example.com/black-friday-2026/` and label the header: *"Archived 2026 Black Friday Deals & Price History"*.
+  3. Reset the live evergreen hub (`example.com/black-friday/`) with next season’s teaser copy and a prominent email lead-capture form (*"Get early access to 2027 holiday doorbusters"*).
+  4. This architecture preserves historical pricing transparency for pre-purchase price-trend researchers while ensuring the evergreen hub continuously compounds PageRank.
+
+---
+
+### **7.19 Google Merchant Center Staged Batch Deployments (Ep. 1206)**
+
+* **The Crawl Throttling Danger:** Pushing massive, simultaneous feed updates (e.g., updating 10,000 product prices, discounts, and availability statuses simultaneously 48 hours before Black Friday) triggers crawl delays and risk of Google Merchant Center (GMC) automated account suspension.
+* **GMC Parity Mandate:** Google’s automated verification spiders verify that prices, discounts, and stock counts in the GMC feed match rendered landing page DOMs exactly. Discrepancies cause automated item-level disapprovals.
+* **The Rolling 3-Day Batch Protocol:**
+  * Stage catalog promotional updates in rolling 3-day increments (Batch 1: 30% of catalog on Day -9; Batch 2: 30% on Day -6; Batch 3: Remaining catalog on Day -3).
+  * Update warehouse and inventory synchronization software in parallel to ensure live on-page inventory matches feed numbers.
+  * Monitor the GMC **"Notifications" tab** 2 to 3 weeks prior to major shopping events; Google surfaces real-time alerts when query volume for specific product categories spikes by ≥10%.
+
+---
+
+### **7.20 35-Day Operational Execution Countdown for Seasonal / Holiday Sprints**
+
+For brands executing seasonal or holiday sprints within a compressed timeline, deploy this week-by-week operational schedule:
+
+| Timeline | Operational Milestones & Technical Guardrails |
+| :---- | :---- |
+| **Week 1 (T-35 to T-28)** | • Freeze evergreen seasonal URL directory structure (`/black-friday/`).<br>• Audit `robots.txt` and WAF edge rules to ensure AI search bots (`OAI-SearchBot`, `PerplexityBot`) are unblocked.<br>• Set up Google Merchant Center Promotions Feed and verify sale price history guidelines. |
+| **Week 2 (T-28 to T-21)** | • Deploy Compact Keyword landers (`../../kirby-aiseo-skill/SKILL.md` §2.46) for secondary long-tail categories.<br>• Inject on-page Discount Transparency Blocks (§2.49) and `AggregateOffer` schema.<br>• Deploy sitewide internal links from high-traffic category pages to seasonal hubs. |
+| **Week 3 (T-21 to T-14)** | • Enrich product copy with granular physical/technical attributes (`../../kirby-aiseo-skill/SKILL.md` §2.47).<br>• Publish middle-of-funnel educational comparison guides (§2.48).<br>• Scrape baseline PAA questions and audit competitor cannibalization footprints. |
+| **Week 4 (T-14 to T-7)** | • Distribute targeted PR Newswire releases with front-loaded commercial headlines (`../../kirby-off-page-seo/SKILL.md` M12).<br>• Begin rolling 3-day GMC batch feed price updates (§7.19).<br>• Configure dedicated UTM tracking dashboards (`utm_source=chatgpt&utm_medium=ai_referral`). |
+| **Event Week (T-7 to T-0)** | • Monitor GMC notifications for real-time demand surges.<br>• Inject real-time trending PAA queries into live FAQ accordions (`../../kirby-seo-telemetry/SKILL.md` M9).<br>• Technical on-call staffing for CDN caching, INP performance, and inventory sync. |
+| **Post-Event (T+1 to T+21)** | • Maintain live evergreen hub; deploy 2-to-3 week email retargeting sequence to unconverted visitors.<br>• Execute January canonical archival handoff (§7.18).<br>• Extract and archive first-party Search Console impression and query data. |
+

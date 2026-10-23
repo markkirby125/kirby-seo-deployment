@@ -26,3 +26,20 @@ For Generative Engine Optimization, launch third-party Exact Match Domain (EMD) 
 * **Status:** Parked at its provenance gate (October 2026). The proposed doctrine — topic-focused satellite *directory* sites with continuously refreshed publish dates to secure high-frequency ChatGPT/Bing citations — has **no verifiable primary source** (adjacent concepts exist: the third-party EMD firewall above (§17.1), generic freshness tactics; the specific claim does not).
 * **Sanctioned alternative:** the third-party EMD satellite architecture above (§17.1 EMD Firewall, §17.2 10-page rule, Module 7 network isolation) is the vetted satellite doctrine.
 * **If ever revived:** the originator must first produce a primary source; any implementation must then ship with disclosure/nofollow requirements and hard footprint limits — the pattern is PBN-adjacent and carries Google link-spam detection risk either way.
+
+---
+
+### **17.5 Satellite Review Domain Prohibition & FTC Disclosure Mandate (Ep. 1206)**
+
+*Source: The Edward Show, Episode 1,206 (David Quaid, Gagan Ghotra & Edward Sturm)*
+
+* **The Satellite Review Domain Trap:** Spinning up disposable, unlinked review satellite domains (e.g., `[brand]reviews.com`) to host scraped or transcribed YouTube influencer reviews is strictly prohibited.
+* **The Hazards:**
+  1. **FTC Endorsement Rule Violations:** Hosting paid influencer review transcripts on external satellite domains without conspicuous, on-page sponsorship disclosures violates FTC regulations (16 CFR Part 465) on deceptive endorsements.
+  2. **Google Scaled Content & Reputation Abuse:** Programmatic deployment of transcript review sites falls under Google's Scaled Content Abuse and Site Reputation Abuse penalties.
+  3. **Zero Retrieval Weight:** LLMs and answer engines heavily prioritize high-authority domains; newly spun-up satellite review domains carry negligible retrieval probability in real-world LLM comparison queries.
+* **The Sanctioned Architecture:**
+  * Collect authorized creator and influencer video reviews and publish verified transcripts directly on the **primary domain** under `/reviews/` (e.g., `brand.com/reviews/[creator]-review`).
+  * Ensure explicit, visible sponsorship disclosures: *"This review features a paid product partnership with [Creator]."*
+  * Mark up transcripts with `VideoObject` and `Review` schema on the primary domain to concentrate entity corroboration where it compounds authority.
+

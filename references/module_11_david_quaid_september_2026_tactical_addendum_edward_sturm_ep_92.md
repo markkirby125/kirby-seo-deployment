@@ -29,3 +29,23 @@ Schema markup alone does not trigger a Knowledge Panel. Triggering requires a su
 2.  **Auto-Scraped Verification Email:** Ensure a primary email address is on the hub page; Google’s verification form will automatically scrape and pre-populate it.
 3.  **Identity Proof:** Submit a selfie holding government photo ID.
 4.  **Profile Auth:** Submit full screenshots of logged-in X (Twitter) and LinkedIn account management pages showing your face.
+
+---
+
+### **11.6 The Reseller Product-Level Interception Tactic (David Quaid Ep. 1206)**
+
+*Source: The Edward Show, Episode 1,206 (David Quaid, Harpreet Singh, Gagan Ghotra & Edward Sturm)*
+
+* **The Enterprise Vulnerability:** Large manufacturers and brand owners (e.g., Sony, Nike) frequently dump their holiday and seasonal promotions onto a single, generic Black Friday hub (`sony.com/black-friday/`) while leaving individual high-intent product pages completely unchanged (`sony.com/products/bravia-65/`).
+* **The Mathematical Mechanism (Relevance × Authority):**
+  $$\text{Organic Ranking Position} = \text{Topical Relevance (On-Page)} \times \text{Domain Authority Multiplier}$$
+  *(Note: Domain Authority is used here as an industry heuristic proxy for aggregate domain-level PageRank and seed-graph trust.)*
+  Because the manufacturer failed to inject seasonal search tokens into their individual product slugs, titles, and H1 tags, their Topical Relevance score for seasonal queries drops toward zero.
+* **The Reseller Interception Protocol:**
+  1. Retailers, distributors, or affiliates clone high-demand product pages into dedicated seasonal landing URLs:
+     `reseller.com/black-friday/sony-bravia-65-deals`
+  2. Inject exact-match seasonal tokens into the slug, `<title>`, `<h1>`, and breadcrumbs.
+  3. **The Outcome:** A reseller with significantly lower Domain Authority (e.g., DA 40 vs DA 90) can mathematically outrank the manufacturer on its own branded SKU for seasonal queries because $100\% \text{ Relevance} \times \text{DA 40} > 15\% \text{ Relevance} \times \text{DA 90}$.
+* **Compliance Guardrails:**
+  * Strict adherence to Manufacturer Suggested Retail Price (MSRP) and Minimum Advertised Price (MAP) rules to avoid distributor license revocation.
+  * Pages must contain live stock fulfillment or authorized affiliate checkout paths; phantom stock pages violate Google's Merchant Trust guidelines.
