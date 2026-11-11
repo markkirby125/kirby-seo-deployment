@@ -329,7 +329,7 @@ When an audit identifies published articles that have generated zero organic cli
 3. **Redeployment to Standalone Exact Match Domains (EMDs) (legacy-risk: conflicts with §7.3, see the note under C):**
    * Register a low-cost, targeted Exact Match Domain or Partial Match Domain (e.g., `specific-problem-fix.com`).
    * Deploy the extracted static HTML as a lightweight, single-page or micro-hub site with zero CMS overhead.
-   * Because EMDs possess an inherent keyword-relevancy advantage, content that failed on a general authority site frequently ranks in the top 3 on an EMD with zero active maintenance.
+   * Because EMDs possess an inherent keyword-relevancy advantage, content that failed on a general authority site frequently ranks in the top 3 on an EMD with zero active maintenance (single source, unverified).
 4. **Redeployment to Parasite Platforms (legacy-risk: conflicts with §7.3, see the note under C):** Alternatively, syndicate the evicted asset to high-authority publishing platforms (Medium, LinkedIn Pulse, Blogspot). Force-index the parasite URL (§4.9) and embed a contextual link pointing back to the primary brand as an authoritative reference.
 
 #### C. Portfolio Risk Mitigation
@@ -340,8 +340,8 @@ Decoupling content across standalone EMDs and parasite platforms eliminates sing
 **Content Eviction Checklist**
 - [ ] Identify all indexed URLs with zero clicks over the trailing 90 days.
 - [ ] Execute an HTTP 410 purge on the primary domain to restore high sitewide page-to-traffic yield.
-- [ ] (Legacy-risk, conflicts with §7.3) Migrate valuable evicted copy to dedicated single-purpose EMDs or high-authority parasite platforms.
-- [ ] (Legacy-risk, conflicts with §7.3) Link evicted assets back to the primary brand hub to harvest secondary referral equity.
+- [ ] Do not migrate evicted copy to satellite EMDs or parasite platforms by default (conflicts with §7.3); consider it only for a genuinely distinct property you operate and disclose as yours.
+- [ ] Do not link evicted assets back to the brand hub to harvest referral equity (conflicts with §7.3).
 
 ---
 
