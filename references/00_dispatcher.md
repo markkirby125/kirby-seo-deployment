@@ -1,9 +1,9 @@
 # Kirby SEO Deployment Operations - Dispatcher
 
-This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
+This skill handles Deployment Staging, Publishing Velocity & Network-Risk Review.
 
 ## 📚 Module Index
-- **Module 7: Deployment Staging, Publishing Velocity & Network Isolation** (including evergreen seasonal directories §7.18, GMC rolling batch deployments §7.19, and 35-day seasonal countdown §7.20) -> Read `./module_7_deployment_staging_publishing_velocity_network_isolation.md`
+- **Module 7: Deployment Staging, Publishing Velocity & Network-Risk Review** (including evergreen seasonal directories §7.18, GMC rolling batch deployments §7.19, and 35-day seasonal countdown §7.20) -> Read `./module_7_deployment_staging_publishing_velocity_network_isolation.md`
 - **Module 11: David Quaid MVP Protocol (Tactical Addendum)** (including reseller product-level interception tactic §11.6) -> Read `./module_11_david_quaid_september_2026_tactical_addendum_edward_sturm_ep_92.md`
 - **Module 17: Satellite EMDs & Safe Migrations** (including satellite review domain prohibition & FTC disclosure mandate §17.5) -> Read `./module_17_satellite_emds_safe_migrations.md`
 - **Module 18: Defensive Video Deployment for AI ORM (Ann Smarty Ep. 1186)** -> Read `./module_18_defensive_video_deployment_ai_orm_ann_smarty_ep_1186.md`

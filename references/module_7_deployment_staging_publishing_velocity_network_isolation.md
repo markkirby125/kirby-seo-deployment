@@ -1,4 +1,4 @@
-# Module 7: Deployment Staging, Publishing Velocity & Network Isolation
+# Module 7: Deployment Staging, Publishing Velocity & Network-Risk Review
 
 ### **7.1 The "Stage & Launch" Deployment Protocol**
 
@@ -12,7 +12,7 @@
 * **The Rolling Bulk Programmatic Ban:** Never deploy rolling programmatic content (e.g., publishing 500–1,000 auto-generated pages daily over several months). Google classifies high-frequency programmatic scaling as bulk Scaled Content Abuse regardless of whether it is published in one burst or spread across 8 months.
 * **Avoid Sudden Velocity Spikes:** Do not suddenly scale from 1 page per week to 10 pages per day, as velocity spikes trigger automated spam filters and manual review queues.
 
-### **7.3 Footprint Elimination & Network Isolation (Do Not Build a Network)**
+### **7.3 Footprint Risk Review (Do Not Build a Network)**
 
 * **Principle: Do Not Build a Network (Do Not Hide One):** The safe posture is to avoid operating a set of sites that exist to support one another's rankings, not to disguise one. Evasion is not a defence. Forensic classifiers reportedly target network topology, shared hosting, burst publishing velocity and repeated DOM or templates (directional, single source, unverified), so masking individual signals does not fix a network that should not exist.
 * **Standalone Assets:** Each domain or microsite must be a genuine standalone entity with its own real purpose, audience and content.

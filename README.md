@@ -1,4 +1,4 @@
-# Programmatic SEO Deployment & Network Isolation (Kirby SEO Deployment)
+# Programmatic SEO Deployment & Network-Risk Review (Kirby SEO Deployment)
 
 [![Kirby Skills Collection](https://img.shields.io/badge/Kirby_Skills-Collection-blue?style=flat-square&logo=github)](https://github.com/markkirby125/kirby-skills-collection)
 
