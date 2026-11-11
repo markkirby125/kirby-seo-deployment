@@ -147,6 +147,8 @@ When diagnosing a traffic drop in Google Search Console, filter performance by s
 - [ ] During traffic drops, filter GSC by subfolder before initiating any content or architectural revisions.
 - [ ] Differentiate TOFU AI zero-click absorption from true BOFU revenue-page rank drops.
 
+*Residual Credibility Triage (recovery after a broad link-based demotion): see kirby-off-page-seo Module 18 §18.23 (directional, single-source). This skill keeps no copy.*
+
 ---
 
 ### **7.9 Hyper-Scale SEO Governance: The F1 "Pit Stop" Law, Natural Mixed Backlinks & The 16,000-Variation Intent Taxonomy (Binance 100M+ URL Architecture)**
@@ -365,6 +367,9 @@ By publishing dozens of MVP pages, you let Google's algorithm dictate where you 
 - [ ] Monitor SERP placements; aggressively expand only the URLs that achieve Page 1 rankings into high-value assets.
 
 ---
+
+#### C. Hold Window After Launch (Directional, Single-Source; Not a Google Rule)
+Once a new MVP, EMD or single-page tool page starts earning impressions, log a FREEZE entry (kirby-seo-telemetry Module 15 §15.2 item 4) and change nothing on it except changes already filed there and defect fixes (broken page, factual or legal error, security). The 90-day figure is unverified; treat it as a default to review, not a rule. Established pages are out of scope. Module 20 §20.2 already holds a migration freeze: apply whichever window is longer, do not stack them.
 
 ### **7.14 The Runaway Publishing Penalty (Agentic Content)**
 
