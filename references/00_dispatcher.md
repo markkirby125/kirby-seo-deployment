@@ -12,8 +12,8 @@ This skill handles Deployment Staging, Publishing Velocity & Network Isolation.
 
 ## When to Use
 - You are deploying programmatic SEO rollouts or acquiring expired domains.
-- You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets, plus an advisory review flag for `AggregateRating`/`AggregateOffer` on non-ecommerce or unverified local pages (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7).
-- You need to review publishing cadences or network footprint isolation.
+- You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7, except the separate advisory review flag for `AggregateRating`/`AggregateOffer`, which is not a block and is defined in Module 19).
+- You need to review publishing cadences or network-footprint posture (do not build a network, Module 7 §7.3).
 - You are executing the Minimum Viable Page (MVP) content testing protocol.
 - You are executing David Quaid's reseller product-level interception tactic to outrank manufacturers on specific SKUs for seasonal queries (Module 11 §11.6).
 - You are structuring evergreen promotional and seasonal directory paths (`/black-friday/`), executing the January canonical archival handoff, staging rolling 3-day GMC batch feed price updates, or executing a 35-day seasonal operational sprint (Module 7 §7.18–§7.20).

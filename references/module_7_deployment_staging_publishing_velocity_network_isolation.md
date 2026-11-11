@@ -333,7 +333,7 @@ When an audit identifies published articles that have generated zero organic cli
 4. **Redeployment to Parasite Platforms:** Alternatively, syndicate the evicted asset to high-authority publishing platforms (Medium, LinkedIn Pulse, Blogspot). Force-index the parasite URL (§4.9) and embed a contextual link pointing back to the primary brand as an authoritative reference.
 
 #### C. Portfolio Risk Mitigation
-*Legacy-risk note: standalone EMD and parasite redeployment, the "top 3" outcome in B.3 and the "insulated" outcome below are older, single-source, unverified claims. Redeploying evicted content to satellite properties can form the network that §7.3 warns against; see §7.3 and the legacy-risk notice in Module 17 §17.1.*
+*Legacy-risk note: standalone EMD and parasite redeployment, the "top 3" outcome in B.3, the "insulated" outcome below and the Content Eviction Checklist items that migrate to EMDs or parasite platforms and link evicted assets back to the brand hub are older, single-source, unverified claims. Redeploying evicted content to satellite properties can form the network that §7.3 warns against; see §7.3 and the legacy-risk notice in Module 17 §17.1.*
 
 Decoupling content across standalone EMDs and parasite platforms eliminates single points of domain failure. If Google rolls out an aggressive algorithmic update targeting a specific niche, the brand’s aggregate search footprint remains insulated across independent web properties.
 
