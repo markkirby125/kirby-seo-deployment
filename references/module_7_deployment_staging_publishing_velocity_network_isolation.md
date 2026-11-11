@@ -12,15 +12,16 @@
 * **The Rolling Bulk Programmatic Ban:** Never deploy rolling programmatic content (e.g., publishing 500–1,000 auto-generated pages daily over several months). Google classifies high-frequency programmatic scaling as bulk Scaled Content Abuse regardless of whether it is published in one burst or spread across 8 months.
 * **Avoid Sudden Velocity Spikes:** Do not suddenly scale from 1 page per week to 10 pages per day, as velocity spikes trigger automated spam filters and manual review queues.
 
-### **7.3 Footprint Elimination & Network Isolation**
+### **7.3 Footprint Elimination & Network Isolation (Do Not Build a Network)**
 
-* **Isolated Standalone Assets:** Each domain or microsite must operate as an independent, standalone entity.
+* **Principle: Do Not Build a Network (Do Not Hide One):** The safe posture is to avoid operating a set of sites that exist to support one another's rankings, not to disguise one. Evasion is not a defence. Forensic classifiers reportedly target network topology, shared hosting, burst publishing velocity and repeated DOM or templates (directional, single source, unverified), so masking individual signals does not fix a network that should not exist.
+* **Standalone Assets:** Each domain or microsite must be a genuine standalone entity with its own real purpose, audience and content.
 * **Zero PBN / Interlinking Networks:** Never link multiple lead-gen or commercial microsites together in a closed private blog network (PBN).
-* **Independent Entity Profiles:** Maintain unique hosting configurations, styling patterns, and structured data profiles per domain.
-* **Search Console & Analytics Account Footprint Defense:**
-  * Never cluster multiple lead-gen microsites, affiliate assets, or experimental AI domains under a single Google Search Console account or shared Google Analytics property ID.
-  * Google internally maps cross-property administrative ownership; an algorithmic demotion or manual spam action on one experimental asset can propagate sitewide quality score devaluations across all associated properties.
-  * Enforce strict administrative isolation: deploy standalone Google accounts via isolated browser profiles/proxies, or deliberately omit Search Console verification on high-risk experimental test nodes.
+* **Genuinely Distinct Entity Profiles:** Hosting, styling and structured data should differ because the businesses or brands are genuinely distinct, not because differences were engineered to hide a relationship. Do not vary hosting, templates or markup to mask common ownership.
+* **Search Console & Analytics Ownership:**
+  * Do not cluster lead-gen microsites, affiliate assets or experimental AI domains under one Search Console account or shared Analytics property as a way of operating a network of them.
+  * Google reportedly maps cross-property administrative ownership, and a demotion or manual action on one asset may propagate to associated properties (directional, single source, unverified). Treat common ownership as discoverable.
+  * Verify every property you operate in Search Console under its real owner or operator account, so manual-action notices reach you. Do not use isolated browser profiles, proxies or throwaway accounts to hide common ownership, and do not omit Search Console verification to keep a test node unassociated.
 
 ### **7.4 Human-Review Readiness & Entity Proof Checklist**
 
@@ -332,6 +333,8 @@ When an audit identifies published articles that have generated zero organic cli
 4. **Redeployment to Parasite Platforms:** Alternatively, syndicate the evicted asset to high-authority publishing platforms (Medium, LinkedIn Pulse, Blogspot). Force-index the parasite URL (§4.9) and embed a contextual link pointing back to the primary brand as an authoritative reference.
 
 #### C. Portfolio Risk Mitigation
+*Legacy-risk note: standalone EMD and parasite redeployment, the "top 3" outcome in B.3 and the "insulated" outcome below are older, single-source, unverified claims. Redeploying evicted content to satellite properties can form the network that §7.3 warns against; see §7.3 and the legacy-risk notice in Module 17 §17.1.*
+
 Decoupling content across standalone EMDs and parasite platforms eliminates single points of domain failure. If Google rolls out an aggressive algorithmic update targeting a specific niche, the brand’s aggregate search footprint remains insulated across independent web properties.
 
 **Content Eviction Checklist**

@@ -2,13 +2,14 @@
 
 *Source: Mike King (iPullRank) & Edward Sturm / The Edward Show, Episode 1127*
 
-For Generative Engine Optimization, launch third-party Exact Match Domain (EMD) satellite sites. This widens your AI citation footprint and firewalls experiments from your main domain.
+For Generative Engine Optimization, this module documents an older approach of launching third-party Exact Match Domain (EMD) satellite sites. The approach is legacy-risk (see the §17.1 notice). It is claimed to widen your AI citation footprint and to firewall experiments from your main domain; both claims are unverified.
 
 ### **17.1 The EMD Firewall**
-* **The Strategy:** Deploy test campaigns and new semantic architecture on isolated EMDs. 
-* **The Benefit:** This confines algorithmic penalties or "Scaled Content Abuse" filters to the satellite, completely protecting the primary money domain from catastrophic traffic loss during aggressive testing.
-* **EMD Trust Signals (Semantic Bridges):** For satellite EMDs intended to survive and merge (not throwaway penalty-test nodes), make the satellite look like a real company. Replicate the main brand's trust signals across the EMD: use the same logo placement, identical footers, and privacy statements. **Note the tradeoff:** linking out to the same primary social media accounts (or specific branded X/YouTube accounts) establishes a semantic bridge that validates the EMD, but it creates a discoverable footprint that pierces the network isolation firewall. Only apply this shared-social mirror to trusted bridge sites; do not apply it to high-risk experimental nodes where total administrative isolation is required.
-* **Entity Expansion:** If successful, these third-party domains act as independent nodes that can cite the main entity, increasing generative visibility.
+* **Legacy-Risk Notice:** This section and the satellite launch rules in §17.2 document an older satellite and "firewall" approach. Treat it as legacy-risk. Satellites that exist to carry experiments or support a main domain can form a network, and forensic classifiers reportedly target topology, hosting, burst velocity and repeated DOM (directional, single source, unverified; see Module 7 §7.3). Evasion is not a defence, and the isolation described below is not guaranteed to protect the main domain. Prefer staged, human-reviewed launches (Module 7 §7.1 and §7.4) and satellites that are genuine, disclosed brands or properties you are prepared to stand behind.
+* **The Strategy (historical, legacy-risk):** Deploy test campaigns and new semantic architecture on isolated EMDs. 
+* **The Benefit (claimed, unverified):** This is claimed to confine algorithmic penalties or "Scaled Content Abuse" filters to the satellite, protecting the primary money domain from traffic loss during aggressive testing. No guarantee: see the Legacy-Risk Notice above.
+* **EMD Trust Signals (Semantic Bridges):** Throwaway penalty-test nodes are legacy-risk and should not be launched. For satellite EMDs intended to survive and merge, operate the satellite as a genuine, disclosed brand or property that is truthfully presented as yours, rather than dressing it up to look like an independent company. Consistent brand trust signals (logo placement, footers, privacy statements) are claimed to support the EMD (unverified), and distinct hosting, styling and markup should reflect genuinely distinct properties (Module 7 §7.3). **Note the tradeoff:** linking out to the same primary social media accounts (or specific branded X/YouTube accounts) is claimed (unverified) to establish a semantic bridge that validates the EMD, but it creates a discoverable footprint that pierces the claimed isolation. Only apply this shared-social mirror to genuine bridge sites you are prepared to disclose as yours; do not launch high-risk experimental nodes in the first place (see the Legacy-Risk Notice above).
+* **Entity Expansion (claimed, unverified):** If successful, these third-party domains are claimed to act as independent nodes that can cite the main entity, increasing generative visibility. Cross-property citation between sites you operate is also the interlinking pattern that Module 7 §7.3 warns against, so use it with care.
 
 ### **17.2 The 10-Page Indexation Rule**
 * **Launch Cap:** Launch the satellite with a maximum of 10 dense, bottom-of-funnel pages.
@@ -24,7 +25,7 @@ For Generative Engine Optimization, launch third-party Exact Match Domain (EMD) 
 ### **17.4 PARKED — Satellite Hub Directory Architecture (Do Not Implement)**
 
 * **Status:** Parked at its provenance gate (October 2026). The proposed doctrine — topic-focused satellite *directory* sites with continuously refreshed publish dates to secure high-frequency ChatGPT/Bing citations — has **no verifiable primary source** (adjacent concepts exist: the third-party EMD firewall above (§17.1), generic freshness tactics; the specific claim does not).
-* **Sanctioned alternative:** the third-party EMD satellite architecture above (§17.1 EMD Firewall, §17.2 10-page rule, Module 7 network isolation) is the vetted satellite doctrine.
+* **Previously documented alternative (legacy-risk):** the third-party EMD satellite architecture above (§17.1 EMD Firewall, §17.2 10-page rule) was the earlier satellite doctrine (see also the Module 7 §7.3 warning against building a network) and carries the legacy-risk notice in §17.1; it is not a recommendation.
 * **If ever revived:** the originator must first produce a primary source; any implementation must then ship with disclosure/nofollow requirements and hard footprint limits — the pattern is PBN-adjacent and carries Google link-spam detection risk either way.
 
 ---
