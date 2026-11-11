@@ -326,22 +326,22 @@ Empirical portfolio data indicates that across large content publishing runs, **
 When an audit identifies published articles that have generated zero organic clicks over a rolling 90-day window:
 1. **Eviction from Primary Domain:** Remove the underperforming URL from the core money site. Serve an explicit **HTTP 410 (Gone)** status code to purge the URL from Google’s crawl index rapidly (§7.7).
 2. **Static HTML Extraction:** Capture the cleanly formatted HTML, imagery, and schema of the evicted content.
-3. **Redeployment to Standalone Exact Match Domains (EMDs):**
+3. **Redeployment to Standalone Exact Match Domains (EMDs) (legacy-risk: conflicts with §7.3, see the note under C):**
    * Register a low-cost, targeted Exact Match Domain or Partial Match Domain (e.g., `specific-problem-fix.com`).
    * Deploy the extracted static HTML as a lightweight, single-page or micro-hub site with zero CMS overhead.
    * Because EMDs possess an inherent keyword-relevancy advantage, content that failed on a general authority site frequently ranks in the top 3 on an EMD with zero active maintenance.
-4. **Redeployment to Parasite Platforms:** Alternatively, syndicate the evicted asset to high-authority publishing platforms (Medium, LinkedIn Pulse, Blogspot). Force-index the parasite URL (§4.9) and embed a contextual link pointing back to the primary brand as an authoritative reference.
+4. **Redeployment to Parasite Platforms (legacy-risk: conflicts with §7.3, see the note under C):** Alternatively, syndicate the evicted asset to high-authority publishing platforms (Medium, LinkedIn Pulse, Blogspot). Force-index the parasite URL (§4.9) and embed a contextual link pointing back to the primary brand as an authoritative reference.
 
 #### C. Portfolio Risk Mitigation
-*Legacy-risk note: standalone EMD and parasite redeployment, the "top 3" outcome in B.3, the "insulated" outcome below and the Content Eviction Checklist items that migrate to EMDs or parasite platforms and link evicted assets back to the brand hub are older, single-source, unverified claims. Redeploying evicted content to satellite properties can form the network that §7.3 warns against; see §7.3 and the legacy-risk notice in Module 17 §17.1.*
+*Legacy-risk note: redeploying evicted content to satellite EMDs or parasite platforms and linking it back to the brand can form the network that §7.3 warns against; see §7.3 and the legacy-risk notice in Module 17 §17.1. In addition, standalone EMD and parasite redeployment, the "top 3" outcome in B.3, the "insulated" outcome below and the Content Eviction Checklist items that migrate to EMDs or parasite platforms and link evicted assets back to the brand hub are older, single-source, unverified claims.*
 
 Decoupling content across standalone EMDs and parasite platforms eliminates single points of domain failure. If Google rolls out an aggressive algorithmic update targeting a specific niche, the brand’s aggregate search footprint remains insulated across independent web properties.
 
 **Content Eviction Checklist**
 - [ ] Identify all indexed URLs with zero clicks over the trailing 90 days.
 - [ ] Execute an HTTP 410 purge on the primary domain to restore high sitewide page-to-traffic yield.
-- [ ] Migrate valuable evicted copy to dedicated single-purpose EMDs or high-authority parasite platforms.
-- [ ] Link evicted assets back to the primary brand hub to harvest secondary referral equity.
+- [ ] (Legacy-risk, conflicts with §7.3) Migrate valuable evicted copy to dedicated single-purpose EMDs or high-authority parasite platforms.
+- [ ] (Legacy-risk, conflicts with §7.3) Link evicted assets back to the primary brand hub to harvest secondary referral equity.
 
 ---
 
