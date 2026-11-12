@@ -324,6 +324,8 @@ A primary cause of sitewide algorithmic demotion during Google Core and Spam upd
 #### A. The 90/10 Content Reality
 Empirical portfolio data indicates that across large content publishing runs, **80% to 90% of newly published articles fail to generate sustained organic traffic**. Allowing hundreds of non-performing URLs to remain indexed on the primary domain drags down the domain-level quality score evaluated by Google's helpful content classifiers.
 
+**Top-of-funnel note (single-company claim, unverified, directional; no denominator available).** HubSpot is cited in the SEO dossier (not in this section's source) as a case where informational top-of-funnel (TOFU) traffic fell as AI summaries answered those queries. Treat it as a prompt to judge pages by conversions, not sessions, and to put investment into bottom-of-funnel assets and owned channels, not as a measured rule.
+
 #### B. The Content Eviction Workflow
 When an audit identifies published articles that have generated zero organic clicks over a rolling 90-day window:
 1. **Eviction from Primary Domain:** Remove the underperforming URL from the core money site. Serve an explicit **HTTP 410 (Gone)** status code to purge the URL from Google’s crawl index rapidly (§7.7).

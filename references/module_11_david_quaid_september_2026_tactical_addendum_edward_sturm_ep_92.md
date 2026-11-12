@@ -24,9 +24,9 @@ Instead of paid tools, leverage LLM vision capabilities:
 3.  **Subfolder Taxonomy:** When scaling FAQs across multiple disparate product lines (e.g., whiskey vs. tequila), isolate each category into dedicated parent hubs (e.g., `/whiskey-faqs/`, `/tequila-faqs/`) rather than an unsegmented sitewide `/faq/`.
 
 ### **11.5 Personal Knowledge Panel Claiming & Verification Playbook**
-Schema markup alone does not trigger a Knowledge Panel. One reported trigger is a sustained influx of distinct IPs querying the branded name (`[Name] + [Keyword]`) (directional, single-source, unverified). Once triggered, execute the verification workflow:
+Schema markup alone is reported not to trigger a Knowledge Panel. One reported trigger is a sustained influx of distinct IPs querying the branded name (`[Name] + [Keyword]`) (directional, single-source, unverified). Once triggered, execute the verification workflow:
 1.  **Multi-Schema Hub Page:** Deploy a single personal hub page whose schema (`ProfilePage`, `Person`, `LocalBusiness`, and `WebPage`) sits in one unified `@graph`, with live, verifiable `sameAs` URLs only. Use this hub page as the authoritative cross-link target out to LinkedIn and X (Twitter). `sameAs` is a disambiguation identifier, not a ranking lever (§11.2: schema imparts zero authority); for the pattern, see [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) Phase 3 rather than restating it here.
-2.  **Auto-Scraped Verification Email:** Ensure a primary email address is on the hub page; Google’s verification form will automatically scrape and pre-populate it.
+2.  **Auto-Scraped Verification Email:** Ensure a primary email address is on the hub page; Google’s verification form is reported to scrape and pre-populate it (single-source, unverified).
 3.  **Identity Proof:** Submit a selfie holding government photo ID.
 4.  **Profile Auth:** Submit full screenshots of logged-in X (Twitter) and LinkedIn account management pages showing your face.
 
