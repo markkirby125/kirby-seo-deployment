@@ -9,7 +9,7 @@ In organic search: **`Rank = Topical Relevance × Domain Authority`**.
 *   **High-Authority Sites:** Established sites have high domain scores ("high bids"), allowing them to rank with partial matches, broad guides, or nested headings.
 
 ### **11.2 The "57 Indexed Document Formats" Law (Against Schema Dependency)**
-Schema markup is not an algorithmic ranking prerequisite. Google indexes **57 different file types** (e.g., plain text, PDF, binary, BAS, images). The vast majority of these formats lack `<title>` tags, meta descriptions, or JSON-LD schema support. 
+Schema markup is reported not to be an algorithmic ranking prerequisite (directional, single-source, unverified). The source states that Google indexes **57 different file types** (e.g., plain text, PDF, binary, BAS, images). The vast majority of these formats lack `<title>` tags, meta descriptions, or JSON-LD schema support. 
 *   Google’s core indexing primitive across all formats is the **document name (URL slug)** and raw body text. 
 *   Schema only assists text scrapers in isolating questions from answers; it imparts zero authority or trust score.
 
@@ -26,7 +26,7 @@ Instead of paid tools, leverage LLM vision capabilities:
 ### **11.5 Personal Knowledge Panel Claiming & Verification Playbook**
 Schema markup alone is reported not to trigger a Knowledge Panel. One reported trigger is a sustained influx of distinct IPs querying the branded name (`[Name] + [Keyword]`) (directional, single-source, unverified). Once triggered, execute the verification workflow:
 1.  **Multi-Schema Hub Page:** Deploy a single personal hub page whose schema (`ProfilePage`, `Person`, `LocalBusiness`, and `WebPage`) sits in one unified `@graph`, with live, verifiable `sameAs` URLs only. Use this hub page as the authoritative cross-link target out to LinkedIn and X (Twitter). `sameAs` is a disambiguation identifier, not a ranking lever (§11.2: schema imparts zero authority); for the pattern, see [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) Phase 3 rather than restating it here.
-2.  **Auto-Scraped Verification Email:** Ensure a primary email address is on the hub page; Google’s verification form is reported to scrape and pre-populate it (single-source, unverified).
+2.  **Auto-Scraped Verification Email:** Ensure a role or alias email address is on the hub page (a conservative choice to limit harvesting of a personal inbox, not a documented Google requirement); Google’s verification form is reported to scrape and pre-populate it (directional, single-source, unverified).
 3.  **Identity Proof:** Submit a selfie holding government photo ID.
 4.  **Profile Auth:** Submit full screenshots of logged-in X (Twitter) and LinkedIn account management pages showing your face.
 
