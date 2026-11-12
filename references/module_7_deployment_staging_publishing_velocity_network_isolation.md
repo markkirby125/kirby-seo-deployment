@@ -38,10 +38,12 @@ Every page must be designed to pass both algorithmic mathematical audits and man
 [ ] 2. Verifiable Author & Business Credentials  
     • Attribute content to genuine authors, qualified engineers, or master tradespeople.  
     • Include legitimate industry credentials, certifications, and operational coverage.
+    • Show visible human labour (contentEffort): a named reviewer or author, real process notes, dated site visits or tests ("contentEffort" is a single-source term; directional, unverified as a ranking signal).
 
 [ ] 3. Ground-Truth Data & Specifics  
     • State realistic, hard price ranges and service turnaround windows.  
     • Include authentic geographical landmarks, postcodes, and localized regional context.
+    • Originality: each page carries something its competing URLs lack (own data, photos, case detail); a page that only restates the SERP is at risk of being devalued (directional, unverified).
 
 [ ] 4. Original Imagery  
     • Replace generic stock photography with authentic, real-world photos of work, tooling, and team members.
@@ -49,7 +51,7 @@ Every page must be designed to pass both algorithmic mathematical audits and man
 [ ] 5. The "Read-Aloud" & Fractal Syntax Audit  
     • Run the `/no-ai-slop` skill on all generated copy to automatically strip AI tells and synthetic text blobs.
     • Read all drafted service and district pages out loud before publishing.  
-    • Instantly eliminate unnatural keyword repetitions, forced city lists (e.g. listing 30 surrounding villages in footer/body), or robotic sentence flows.  
+    • Instantly eliminate unnatural keyword repetitions, forced city lists (e.g. listing 30 surrounding villages in footer/body), or robotic sentence flows. Township or village subfolders are acceptable only when each page carries curated municipal data (real local facts per page), not swapped place names; apply the [`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Gate 0 differentiation test first.  
     • Purge the "Grandiosity Contrast" cliché ("Not just X, but Y" / "These aren't just services, they're peace of mind").  
     • Purge formulaic "joke machinery" / forced corporate levity in commercial service descriptions.  
     • Verify visual layout avoids identical 3-box feature card stacks ("Rule of Three" AI template tell).  

@@ -42,5 +42,5 @@ For Generative Engine Optimization, this module documents an older approach of l
 * **The Sanctioned Architecture:**
   * Collect authorized creator and influencer video reviews and publish verified transcripts directly on the **primary domain** under `/reviews/` (e.g., `brand.com/reviews/[creator]-review`).
   * Ensure explicit, visible sponsorship disclosures: *"This review features a paid product partnership with [Creator]."*
-  * Mark up transcripts with `VideoObject` and `Review` schema on the primary domain to concentrate entity corroboration where it compounds authority.
+  * Mark up the video with `VideoObject` on the primary domain to concentrate entity corroboration there. Use `Review` schema only for genuine, verifiable reviews; do not mark a paid or sponsored partnership transcript as a `Review`. Schema is an identifier aid, not a ranking lever (directional, unverified).
 

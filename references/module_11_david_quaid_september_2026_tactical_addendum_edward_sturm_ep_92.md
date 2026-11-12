@@ -25,7 +25,7 @@ Instead of paid tools, leverage LLM vision capabilities:
 
 ### **11.5 Personal Knowledge Panel Claiming & Verification Playbook**
 Schema markup alone does not trigger a Knowledge Panel. Triggering requires a sustained influx of distinct IPs querying the branded name (`[Name] + [Keyword]`). Once triggered, execute the verification workflow:
-1.  **Multi-Schema Hub Page:** Deploy a single personal hub page containing a combined schema bundle (`ProfilePage`, `Person`, `LocalBusiness`, and `WebPage`). Use this hub page as the authoritative cross-link target out to LinkedIn and X (Twitter).
+1.  **Multi-Schema Hub Page:** Deploy a single personal hub page whose schema (`ProfilePage`, `Person`, `LocalBusiness`, and `WebPage`) sits in one unified `@graph`, with live, verifiable `sameAs` URLs only. Use this hub page as the authoritative cross-link target out to LinkedIn and X (Twitter). `sameAs` is a disambiguation identifier, not a ranking lever (§11.2: schema imparts zero authority); for the pattern, see [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) Phase 3 rather than restating it here.
 2.  **Auto-Scraped Verification Email:** Ensure a primary email address is on the hub page; Google’s verification form will automatically scrape and pre-populate it.
 3.  **Identity Proof:** Submit a selfie holding government photo ID.
 4.  **Profile Auth:** Submit full screenshots of logged-in X (Twitter) and LinkedIn account management pages showing your face.
