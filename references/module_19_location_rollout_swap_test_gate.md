@@ -8,6 +8,9 @@ The spam update demotes programmatic location sets at the folder level. The only
 ### **19.2 Gate Scope**
 The gate triggers when a deployment diff adds or modifies more than one page under a location/city folder (`/locations/`, `/city-pages/`, or any folder whose pages follow a `{template}+{locality}` naming pattern). Single-page edits to genuinely unique pages (contact, about, service hub) are out of scope.
 
+### **19.2a Freeze Interlock**
+The gate additionally **blocks production deploys of new/modified location sets between Nov 10 and ~Dec 1, 2026** (core update rollout + 7 days; `Module 7 §7.6` / `../../kirby-seo-telemetry/SKILL.md` Module 16) unless the diff is a logged defect fix. Staging branches may still be linted.
+
 ### **19.3 Automated Lint Checks**
 The linter implements mechanical proxies for the Module 7 rules, plus one advisory review flag (rating/offer markup) that has no matching Module 7 rule yet. **Mechanical checks gate the deploy; they never clear it alone**: a page passing all mechanical checks still requires the human metadata pass (`../../kirby-aiseo-skill/SKILL.md` Module 15 §15.2).
 

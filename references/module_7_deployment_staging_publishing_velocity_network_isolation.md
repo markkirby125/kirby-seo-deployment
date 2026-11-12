@@ -18,6 +18,7 @@
 * **Standalone Assets:** Each domain or microsite must be a genuine standalone entity with its own real purpose, audience and content.
 * **Zero PBN / Interlinking Networks:** Never link multiple lead-gen or commercial microsites together in a closed private blog network (PBN).
 * **Genuinely Distinct Entity Profiles:** Hosting, styling and structured data should differ because the businesses or brands are genuinely distinct, not because differences were engineered to hide a relationship. Do not vary hosting, templates or markup to mask common ownership.
+* **Logo-Swap Lookalike Test (Nov 2026 core update audit):** Put the site next to a competitor or sibling site on the same theme/kit; if swapping the logos leaves them indistinguishable, they can be clustered and demoted together (directional, single-source). Check shared heading structure, copy skeletons, stock photos, hero layout, and DOM vocabulary. The remedy is genuinely different offers, original photography, and real local/business detail — never engineered variation to mask common ownership (see the standing rule above).
 * **Search Console & Analytics Ownership:**
   * Do not cluster lead-gen microsites, affiliate assets or experimental AI domains under one Search Console account or shared Analytics property as a way of operating a network of them.
   * Google reportedly maps cross-property administrative ownership, and a demotion or manual action on one asset may propagate to associated properties (directional, single source, unverified). Treat common ownership as discoverable.
@@ -74,6 +75,7 @@ Every page must be designed to pass both algorithmic mathematical audits and man
 
 * **Volatility Sentinel:** Monitor Search Engine Roundtable and SERP volatility indices (Semrush Sensor / RankRanger) weekly.
 * **Pre-Update Deployment Freeze:** When multi-day SERP volatility spikes occur (indicating Google is running live A/B algorithm test buckets prior to an official spam or core update rollout), freeze all programmatic staging rollouts, domain migrations, and mass URL restructuring until the update settles.
+* **November 2026 Core Update Deploy Interlock (dated instance):** Active rollout **Nov 10 – ~Nov 24, 2026** plus ≥7d settle wait (**freeze through ~Dec 1, 2026**). Freeze production location rollouts, mass pruning/410/301s, template/heading rewrites, domain/EMD migrations, and GBP-linked cutovers. Allowed: logged defect fixes (broken pages, legal/factual errors, security) and additive seasonal/promo links. Snapshot/queue rules, Core-vs-Spam triage, and outlier caveats live canonically in [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 16 (`§16.1–16.2`); existing-estate pruning criteria live in [`kirby-local-seo`](../../kirby-local-seo/SKILL.md) Module 7 §7.10.
 
 ### **7.7 Algorithmic Spam Demotion Recovery Protocol & The 75–90 Day Observation Cycle**
 

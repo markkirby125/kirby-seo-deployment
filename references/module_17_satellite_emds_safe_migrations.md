@@ -44,3 +44,14 @@ For Generative Engine Optimization, this module documents an older approach of l
   * Ensure explicit, visible sponsorship disclosures: *"This review features a paid product partnership with [Creator]."*
   * Mark up the video with `VideoObject` on the primary domain to concentrate entity corroboration there. Use `Review` schema only for genuine, verifiable reviews; do not mark a paid or sponsored partnership transcript as a `Review`. Schema is an identifier aid, not a ranking lever (directional, unverified). For what review and rating markup may stay on a page, see [`kirby-grounded-seo-auditor`](../../kirby-grounded-seo-auditor/SKILL.md) module 05; for what to strip when markup is suppressed or warned, see [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) Phase 4.
 
+---
+
+### **17.6 Unbranded EMD / Rank-and-Rent Entity-Proof Gate (Nov 2026 core update)**
+*Source: Kasra Dash Nov 2026 audit findings (single-source, directional).*
+An exact-match or rank-and-rent domain with no real business entity behind it scores poorly on site-quality models that weight brand/entity-directed searches. Before launching or keeping such a site, all of the following must be true, otherwise do not launch/retain it (consistent with §17.1's legacy-risk notice):
+1. **Entity proof:** real operating business or named operator, About/Contact with verifiable details (Module 7 §7.4 checklist), consistent NAP.
+2. **Original photography** of real work/premises; no stock or synthetic "our team" imagery (`../../kirby-local-seo/SKILL.md` Module 7 Rule 3).
+3. **Authentic reviews** on a real GBP/review profile (`../../kirby-local-seo/SKILL.md` Module 3 & Module 7 §7.6; disappearance defense in Module 10; never rented or transplanted).
+4. **Branded demand:** measurable searches for the brand/entity name in GSC (brand-query impressions trending up); zero branded demand after the observation window = escalate to brand-building or retire (410/301 per §17.3, after the Module 7 §7.6 / `../../kirby-seo-telemetry/SKILL.md` Module 16 freeze).
+Freeze note: do not migrate, merge, or prune an EMD during the Module 7 §7.6 / `../../kirby-seo-telemetry/SKILL.md` Module 16 Nov 2026 window.
+
