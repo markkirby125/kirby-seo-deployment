@@ -42,5 +42,5 @@ For Generative Engine Optimization, this module documents an older approach of l
 * **The Sanctioned Architecture:**
   * Collect authorized creator and influencer video reviews and publish verified transcripts directly on the **primary domain** under `/reviews/` (e.g., `brand.com/reviews/[creator]-review`).
   * Ensure explicit, visible sponsorship disclosures: *"This review features a paid product partnership with [Creator]."*
-  * Mark up the video with `VideoObject` on the primary domain to concentrate entity corroboration there. Use `Review` schema only for genuine, verifiable reviews; do not mark a paid or sponsored partnership transcript as a `Review`. Schema is an identifier aid, not a ranking lever (directional, unverified).
+  * Mark up the video with `VideoObject` on the primary domain to concentrate entity corroboration there. Use `Review` schema only for genuine, verifiable reviews; do not mark a paid or sponsored partnership transcript as a `Review`. Schema is an identifier aid, not a ranking lever (directional, unverified). For what review and rating markup may stay on a page, see [`kirby-grounded-seo-auditor`](../../kirby-grounded-seo-auditor/SKILL.md) module 05; for what to strip when markup is suppressed or warned, see [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) Phase 4.
 
