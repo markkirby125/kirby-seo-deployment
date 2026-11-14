@@ -5,6 +5,7 @@
 * **Do Not Push Mass AI Dumps to Live Indexes:** Never publish hundreds of unindexed or unreviewed AI pages overnight on a live domain.
 * **Private Staging:** Build out, structure, and stage complete site architectures in a closed development/staging environment.
 * **Finished-Form Presentation:** Present the website to search crawlers as a complete, fully functioning, high-utility entity rather than streaming uncurated batches daily.
+* **Pre-Publish Topical Drift & AI Retrieval Bot Gate:** Before promoting staged pages to production, screen candidate URLs against the Pre-Publication Semantic Drift Gate ([`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 20) and verify that `robots.txt` / WAF rules leave **`OAI-SearchBot` and `PerplexityBot` unblocked** on public SSOT (`"My Business Facts"`), `/trust`, and commercial money-page deploys.
 
 ### **7.2 Natural Publishing Velocity & Ban on Rolling Programmatic Bulk**
 
@@ -313,7 +314,7 @@ Never generate multi-page client content in ephemeral, one-off chat threads. Enf
 - [ ] Create an isolated Claude / ChatGPT Project for each client or portfolio asset.
 - [ ] Upload `BUSINESS_BRIEF.md` and related keyword/fan-out CSVs into the Project Knowledge store.
 - [ ] Verify all content generation prompts anchor strictly to the uploaded knowledge base.
-- [ ] Update `BUSINESS_BRIEF.md` whenever operational SLAs, pricing, or service offerings evolve.
+- [ ] Update `BUSINESS_BRIEF.md` whenever operational SLAs, pricing, or service offerings evolve, and mirror verified facts onto the public on-domain SSOT (`"My Business Facts"` / `/trust` page) with **`OAI-SearchBot` and `PerplexityBot` explicitly unblocked** in `robots.txt`.
 
 ---
 
@@ -328,9 +329,14 @@ Empirical portfolio data indicates that across large content publishing runs, **
 
 **Top-of-funnel note (directional, single-source, unverified; a single-company claim with no denominator available).** HubSpot is cited in the SEO dossier (not in this section's source) as a case where informational top-of-funnel (TOFU) traffic fell as AI summaries answered those queries. Treat it as a prompt to judge pages by conversions, not sessions, and to put investment into bottom-of-funnel assets and owned channels, not as a measured rule.
 
-#### B. The Content Eviction Workflow
-When an audit identifies published articles that have generated zero organic clicks over a rolling 90-day window:
-1. **Eviction from Primary Domain:** Remove the underperforming URL from the core money site. Serve an explicit **HTTP 410 (Gone)** status code to purge the URL from Google’s crawl index rapidly (§7.7).
+#### B. The Content Eviction Workflow & Mandatory Pruning Safety Gates
+When an audit identifies published articles that have generated zero organic clicks over a rolling 90-day window, **never execute a blind HTTP 410 purge without clearing all four Pruning Safety Gates (Kasra Dash V1/V2)**:
+0. **Mandatory Pre-Eviction Safety Gates (Must Clear All 4 Before Any HTTP 410):**
+   * **(a) Inbound Backlink Check (301 vs. 410 Routing):** Audit the candidate URL in GSC Links and Ahrefs/SEMrush for external referring domains. If the URL carries valid inbound backlinks or citations, **do NOT serve a 410** — route it via a **1-to-1 HTTP 301 redirect** to the closest intent-parity parent or sibling page (§7.5 / §7.10B) to preserve link equity. Reserve HTTP 410 strictly for unlinked dead weight with no retained equivalent.
+   * **(b) 90-Day GSC Impressions & `<90d`/Seasonal Exemptions:** Verify the URL has **zero (or near-zero) GSC impressions over a full 90-day window** (not just 14–30 days of zero clicks), and explicitly exempt **newly published URLs (`<90 days` since first indexation)** and **seasonal commercial/weather pages** (`../../kirby-local-seo/SKILL.md` Module 7 §7.9–§7.10).
+   * **(c) Preserve Conversion-Enabling MOFU/BOFU Guides (Core Commercial Coverage First):** Never prune low-search-volume pages that enable commercial conversions or sales qualification — such as **financing/payment options, pricing/cost breakdowns, warranty/guarantee terms, `/trust` hubs, or SSOT `"My Business Facts"` pages** — even if their direct organic entry clicks are low.
+   * **(d) Active Core-Update Freeze Gate (§7.6):** Never execute mass 410/301 pruning during an active Google Core or Spam Update rollout window plus the 7-day post-completion settle buffer (`../../kirby-seo-telemetry/SKILL.md` Module 16 §16.2). Queue candidate evictions in `seo_changelog.json` (`FREEZE-QUEUE`) until the rollout settles.
+1. **Eviction from Primary Domain:** For URLs that pass all four safety gates above (zero 90d impressions/clicks, `>=90d` age, non-seasonal, zero backlinks, non-MOFU/BOFU conversion utility, and outside any active core-update freeze), remove the URL from the core money site and serve an explicit **HTTP 410 (Gone)** status code to purge the URL from Google’s crawl index rapidly (§7.7).
 2. **Static HTML Extraction:** Capture the cleanly formatted HTML, imagery, and schema of the evicted content.
 3. **Redeployment to Standalone Exact Match Domains (EMDs) (legacy-risk: conflicts with §7.3, see the note under C):**
    * Register a low-cost, targeted Exact Match Domain or Partial Match Domain (e.g., `specific-problem-fix.com`).
@@ -344,8 +350,9 @@ When an audit identifies published articles that have generated zero organic cli
 Decoupling content across standalone EMDs and parasite platforms eliminates single points of domain failure. If Google rolls out an aggressive algorithmic update targeting a specific niche, the brand’s aggregate search footprint remains insulated across independent web properties.
 
 **Content Eviction Checklist**
-- [ ] Identify all indexed URLs with zero clicks over the trailing 90 days.
-- [ ] Execute an HTTP 410 purge on the primary domain to restore high sitewide page-to-traffic yield.
+- [ ] Identify candidate indexed URLs with zero clicks and zero/minimal impressions over the trailing 90 days (exempting `<90d` new URLs and seasonal assets per `../../kirby-local-seo/SKILL.md` §7.10).
+- [ ] Clear the 4 Mandatory Pruning Safety Gates before any eviction: (a) check inbound backlinks (301 to intent-parity parent if linked; 410 only if unlinked), (b) verify 90d GSC impressions & `<90d`/seasonal exemptions, (c) preserve conversion-enabling MOFU/BOFU guides (financing, pricing, guarantees, `/trust`, SSOT facts), and (d) confirm no active core-update rollout freeze (§7.6).
+- [ ] Execute an HTTP 410 purge on the primary domain only for unlinked, non-converting URLs that pass all four safety gates.
 - [ ] Do not migrate evicted copy to satellite EMDs or parasite platforms by default (conflicts with §7.3); consider it only for a genuinely distinct property you operate and disclose as yours.
 - [ ] Do not link evicted assets back to the brand hub to harvest referral equity (conflicts with §7.3).
 
