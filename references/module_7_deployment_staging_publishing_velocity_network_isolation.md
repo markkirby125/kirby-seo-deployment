@@ -11,7 +11,7 @@
 
 * **Human Publishing Cadence:** For ongoing content additions, maintain a steady, human-level publishing pace (e.g., a few carefully curated pages per week).
 * **The Rolling Bulk Programmatic Ban:** Never deploy rolling programmatic content (e.g., publishing 500–1,000 auto-generated pages daily over several months). Google classifies high-frequency programmatic scaling as bulk Scaled Content Abuse regardless of whether it is published in one burst or spread across 8 months.
-* **Avoid Sudden Velocity Spikes:** Do not suddenly scale from 1 page per week to 10 pages per day, as velocity spikes trigger automated spam filters and manual review queues.
+* **Avoid Sudden Velocity Spikes (SAFE-style filters flag burst velocity; directional, unverified):** Do not suddenly scale from 1 page per week to 10 pages per day, as velocity spikes trigger automated spam filters and manual review queues.
 
 ### **7.3 Footprint Risk Review (Do Not Build a Network)**
 
