@@ -12,7 +12,7 @@ This skill handles Deployment Staging, Publishing Velocity & Network-Risk Review
 
 ## When to Use
 - You are deploying programmatic SEO rollouts or acquiring expired domains.
-- You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7, except the separate advisory review flag for `AggregateRating`/`AggregateOffer`, which is not a block and is defined in Module 19).
+- You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7, except the human-review flag for `AggregateRating`, `Review` and `AggregateOffer` markup, which is not a block and applies `../../kirby-local-seo/SKILL.md` Module 6 §6.10; see Module 19 §19.3).
 - You need to review publishing cadences, network-footprint posture / Logo-Swap lookalike risk (Module 7 §7.3), or core-update deploy freezes (Module 7 §7.6; canonical freeze ledger in `../../kirby-seo-telemetry/SKILL.md` Module 16).
 - You are executing the Minimum Viable Page (MVP) content testing protocol.
 - You are executing David Quaid's reseller product-level interception tactic to outrank manufacturers on specific SKUs for seasonal queries (Module 11 §11.6).
