@@ -3,7 +3,7 @@
 This skill handles Deployment Staging, Publishing Velocity & Network-Risk Review.
 
 ## 📚 Module Index
-- **Module 7: Deployment Staging, Publishing Velocity & Network-Risk Review** (including evergreen seasonal directories §7.18, GMC rolling batch deployments §7.19, and 35-day seasonal countdown §7.20) -> Read `./module_7_deployment_staging_publishing_velocity_network_isolation.md`
+- **Module 7: Deployment Staging, Publishing Velocity & Network-Risk Review** (including non-uniform, editorial-capacity-paced publishing for matured 3-month+ enterprise subfolders §7.2, reverse-image clone checks §7.3, 4-step post-collapse recovery §7.12A, prototype staging gate within §7.14 [Runaway Publishing Penalty], evergreen seasonal directories §7.18, GMC rolling batch deployments §7.19, and 35-day seasonal countdown §7.20) -> Read `./module_7_deployment_staging_publishing_velocity_network_isolation.md`
 - **Module 11: David Quaid MVP Protocol (Tactical Addendum)** (including reseller product-level interception tactic §11.6) -> Read `./module_11_david_quaid_september_2026_tactical_addendum_edward_sturm_ep_92.md`
 - **Module 17: Satellite EMDs & Safe Migrations** (including satellite review domain prohibition & FTC disclosure mandate §17.5, and unbranded EMD entity-proof gate §17.6) -> Read `./module_17_satellite_emds_safe_migrations.md`
 - **Module 18: Defensive Video Deployment for AI ORM (Ann Smarty Ep. 1186)** -> Read `./module_18_defensive_video_deployment_ai_orm_ann_smarty_ep_1186.md`
@@ -11,6 +11,9 @@ This skill handles Deployment Staging, Publishing Velocity & Network-Risk Review
 - **Module 20: Migration Timing Benchmarks & Title-Update SLA Rules (Google Illyes Oct 2026)** -> Read `./module_20_migration_timing_benchmarks_title_sla.md`
 
 ## When to Use
+- You are executing post-collapse thin-page recovery after a core-update freeze and 7-day settle window (checking Manual Actions in GSC first, then enriching in place, consolidating via 1:1 301s, or purging unlinked zero-impression dead weight — Module 7 §7.12).
+- You are auditing multiple owned/managed templates for stock-photo or kit replication (`Logo-Swap Lookalike Test` and reverse-image checks across sibling properties — Module 7 §7.3).
+- You are previewing rendered HTML/SSR prototypes under `noindex` with SSR pre-upload crawlability verification before CMS/production deployment (Module 7 §7.14).
 - You are deploying programmatic SEO rollouts or acquiring expired domains.
 - You are linting a bulk location-page rollout: the pre-deploy gate blocks folders whose pages fail the Swap Test after locality masking (>50% shared substance), duplicate/unlinked JSON-LD, or first-person claims on reused assets (Module 19; rule definitions are `../../kirby-local-seo/SKILL.md` Module 7, except the human-review flag for `AggregateRating`, `Review` and `AggregateOffer` markup, which is not a block and applies `../../kirby-local-seo/SKILL.md` Module 6 §6.10; see Module 19 §19.3).
 - You need to review publishing cadences, network-footprint posture / Logo-Swap lookalike risk (Module 7 §7.3), or core-update deploy freezes (Module 7 §7.6; canonical freeze ledger in `../../kirby-seo-telemetry/SKILL.md` Module 16).
