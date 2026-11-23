@@ -45,7 +45,7 @@ When a domain migration or rebrand involves an attached **Google Business Profil
 3. **T+14 Days (Staggered GBP Field Cutover — 1 Field Per Week):** Logged in strictly as the GBP **Primary Owner** (never Manager), apply changes at 7-day intervals:
    - *Day 14*: Update GBP **Website URL** to the new canonical domain.
    - *Day 21*: Update GBP **Business Name** (if rebranding).
-   - *Day 28*: Update **Primary Category** or **Phone Number** (if applicable).
+   - *Day 28*: Update the **Phone Number** (only if it changes). Do not change the Primary Category in a migration or rebrand; a category change fails the legitimate-rebrand test (`../../kirby-local-seo/SKILL.md` Module 9 §9.3).
 4. **Address Cutover Pre-Check:** Never combine an address change with a domain/name flip. Before any address cutover, audit the target coordinate on Google Maps for prior-tenant ghost listings (`../../kirby-local-seo/SKILL.md` Module 12 §12.2).
 
 ## 20.5 Deployment Checklist Addendum (staple to any migration release)

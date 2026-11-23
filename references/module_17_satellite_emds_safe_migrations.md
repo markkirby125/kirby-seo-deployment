@@ -36,7 +36,7 @@ For Generative Engine Optimization, this module documents an older approach of l
 
 * **The Satellite Review Domain Trap:** Spinning up disposable, unlinked review satellite domains (e.g., `[brand]reviews.com`) to host scraped or transcribed YouTube influencer reviews is strictly prohibited.
 * **The Hazards:**
-  1. **FTC Endorsement Rule Violations:** Hosting paid influencer review transcripts on external satellite domains without conspicuous, on-page sponsorship disclosures violates FTC regulations (16 CFR Part 465) on deceptive endorsements.
+  1. **FTC Endorsement Rule Violations:** Hosting paid influencer review transcripts on external satellite domains without conspicuous, on-page sponsorship disclosures breaches the FTC Endorsement Guides (16 CFR Part 255); fake or bought reviews are a separate matter under 16 CFR Part 465.
   2. **Google Scaled Content & Reputation Abuse:** Programmatic deployment of transcript review sites falls under Google's Scaled Content Abuse and Site Reputation Abuse penalties.
   3. **Zero Retrieval Weight:** LLMs and answer engines heavily prioritize high-authority domains; newly spun-up satellite review domains carry negligible retrieval probability in real-world LLM comparison queries.
 * **The Sanctioned Architecture:**
